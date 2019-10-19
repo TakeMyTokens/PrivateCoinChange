@@ -1,0 +1,122 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+APIPrivateMarketEngine
+</name>
+</assembly>
+<members>
+<member name="T:APIPrivateMarketEngine.My.Resources.Resources">
+<summary>
+  Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
+</summary>
+</member>
+<member name="P:APIPrivateMarketEngine.My.Resources.Resources.ResourceManager">
+<summary>
+  Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
+</summary>
+</member>
+<member name="P:APIPrivateMarketEngine.My.Resources.Resources.Culture">
+<summary>
+  Esegue l'override della proprietà CurrentUICulture del thread corrente per tutte le
+  ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
+</summary>
+</member>
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.item">
+ <summary>
+ This class contain the Item data
+ </summary>
+</member>
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.baseAdvertisement">
+ <summary>
+ This class is a base of Advertisement
+ </summary>
+</member>
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.newAdvertisement">
+ <summary>
+ This class contain the information reguard a New Advert data
+ </summary>
+</member>
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.updateAdvertisement">
+ <summary>
+ This class contain the information reguard an Edit Advert data
+ </summary>
+</member>
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.advertisement">
+ <summary>
+ This class contain the information reguard the advertisement
+ </summary>
+</member>
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.advertisementEngine">
+ <summary>
+ This class contain all member to manage a single advertisement
+ </summary>
+</member>
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisementEngine.createIntoFilePath(System.String)">
+ <summary>
+ This method provide to create path into base directory
+ and set file name
+ </summary>
+ <param name="path"></param>
+ <returns></returns>
+</member>
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.advertisements">
+ <summary>
+ This class contain all data and method to manage a list of advertisement
+ </summary>
+</member>
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.rebuidIndex">
+ <summary>
+ This method provide to rebuild a complete list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.getActive">
+ <summary>
+ This methdo provide a get an active element of a list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.save(System.Guid,System.Boolean)">
+ <summary>
+ This method provide to save an history of data and update the list
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.add">
+ <summary>
+ This method provide to add a new record into list and mange the history
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.deleteData(System.Guid)">
+ <summary>
+ This method provide to delete data into list and into key.
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.containsKey(System.Guid)">
+ <summary>
+ This method provide to check into list the exact key
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.getData(System.Guid)">
+ <summary>
+ This method provide to get an item of a list
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.init(System.String)">
+ <summary>
+ This method provide to execute an init code
+ </summary>
+ <param name="PathBaseDB"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>

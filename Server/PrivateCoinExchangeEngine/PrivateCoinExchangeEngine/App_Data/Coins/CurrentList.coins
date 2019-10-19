@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCoin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Coin>
+    <Identity>1</Identity>
+    <ShortName>EUR</ShortName>
+    <Description>Euro</Description>
+    <IsFiat>true</IsFiat>
+    <Symbol>€</Symbol>
+  </Coin>
+  <Coin>
+    <Identity>2</Identity>
+    <ShortName>USD</ShortName>
+    <Description>Dollar</Description>
+    <IsFiat>true</IsFiat>
+    <Symbol>$</Symbol>
+  </Coin>
+  <Coin>
+    <Identity>3</Identity>
+    <ShortName>BTC</ShortName>
+    <Description>Bitcoin</Description>
+    <IsFiat>false</IsFiat>
+    <Symbol>B</Symbol>
+  </Coin>
+  <Coin>
+    <Identity>4</Identity>
+    <ShortName>ETH</ShortName>
+    <Description>Ethereum</Description>
+    <IsFiat>false</IsFiat>
+    <Symbol>E</Symbol>
+  </Coin>
+  <Coin>
+    <Identity>5</Identity>
+    <ShortName>CHCS</ShortName>
+    <Description>Crypto Hide Coin</Description>
+    <IsFiat>false</IsFiat>
+    <Symbol>§</Symbol>
+  </Coin>
+</ArrayOfCoin>

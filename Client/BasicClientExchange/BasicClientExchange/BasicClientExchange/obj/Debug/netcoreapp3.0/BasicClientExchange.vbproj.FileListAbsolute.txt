@@ -1,0 +1,13 @@
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.exe
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.deps.json
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.runtimeconfig.json
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.runtimeconfig.dev.json
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.dll
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.pdb
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.vbprojAssemblyReference.cache
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.AssemblyInfoInputs.cache
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.AssemblyInfo.vb
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.dll
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.pdb
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.vbproj.CopyComplete

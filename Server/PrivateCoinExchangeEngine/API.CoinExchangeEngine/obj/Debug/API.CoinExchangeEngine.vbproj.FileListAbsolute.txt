@@ -1,0 +1,9 @@
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Debug\API.CoinExchangeEngine.vbprojAssemblyReference.cache
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Debug\API.CoinExchangeEngine.vbproj.GenerateResource.cache
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\bin\Debug\APIPrivateMarketEngine.dll
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\bin\Debug\APIPrivateMarketEngine.pdb
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\bin\Debug\APIPrivateMarketEngine.xml
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Debug\APIPrivateMarketEngine.Resources.resources
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Debug\APIPrivateMarketEngine.dll
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Debug\APIPrivateMarketEngine.xml
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Debug\APIPrivateMarketEngine.pdb

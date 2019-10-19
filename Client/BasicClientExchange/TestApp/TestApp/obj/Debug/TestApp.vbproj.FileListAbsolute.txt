@@ -1,0 +1,11 @@
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\TestApp\TestApp\bin\Debug\TestApp.exe.config
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\TestApp\TestApp\bin\Debug\TestApp.exe
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\TestApp\TestApp\bin\Debug\TestApp.pdb
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\TestApp\TestApp\bin\Debug\TestApp.xml
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\TestApp\TestApp\obj\Debug\TestApp.vbprojAssemblyReference.cache
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\TestApp\TestApp\obj\Debug\TestApp.Resources.resources
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\TestApp\TestApp\obj\Debug\TestApp.vbproj.GenerateResource.cache
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\TestApp\TestApp\obj\Debug\TestApp.exe
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\TestApp\TestApp\obj\Debug\TestApp.xml
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\TestApp\TestApp\obj\Debug\TestApp.pdb
+E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\TestApp\TestApp\obj\Debug\TestApp.vbproj.CopyComplete
