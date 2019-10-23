@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\TakeMyTokens\\Take My Tokens Private Coin Change\\Client\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange.vbproj": {}
+    "E:\\TakeMyTokens\\Private Market\\Client\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange.vbproj": {}
   },
   "projects": {
-    "E:\\TakeMyTokens\\Take My Tokens Private Coin Change\\Client\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange.vbproj": {
+    "E:\\TakeMyTokens\\Private Market\\Client\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\TakeMyTokens\\Take My Tokens Private Coin Change\\Client\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange.vbproj",
+        "projectUniqueName": "E:\\TakeMyTokens\\Private Market\\Client\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange.vbproj",
         "projectName": "BasicClientExchange",
-        "projectPath": "E:\\TakeMyTokens\\Take My Tokens Private Coin Change\\Client\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange.vbproj",
+        "projectPath": "E:\\TakeMyTokens\\Private Market\\Client\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange.vbproj",
         "packagesPath": "C:\\Users\\Salvo\\.nuget\\packages\\",
-        "outputPath": "E:\\TakeMyTokens\\Take My Tokens Private Coin Change\\Client\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange\\obj\\",
+        "outputPath": "E:\\TakeMyTokens\\Private Market\\Client\\BasicClientExchange\\BasicClientExchange\\BasicClientExchange\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

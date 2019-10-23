@@ -128,7 +128,7 @@ Module Program
 
         Dim clsEngine As New AreaInternal.ProxyWS(Of AreaModels.Advertisement)
 
-        clsEngine.URL = fnCompleteProcessServer() & "advertisements/fa2e5303-302d-43a5-bb04-67657f6cab7f"
+        clsEngine.URL = fnCompleteProcessServer() & "advertisements/33686a26-be5e-43fb-8118-e12251f0e9c1"
 
         clsEngine.Data = New AreaModels.Advertisement
 
@@ -143,7 +143,7 @@ Module Program
 
         'AddNewExample()
         'UpdateExample()
-        'DeleteExample()
+        DeleteExample()
 
     End Sub
 

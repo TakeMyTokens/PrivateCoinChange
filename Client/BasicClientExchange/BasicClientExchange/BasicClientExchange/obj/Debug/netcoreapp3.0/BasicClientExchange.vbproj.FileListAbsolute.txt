@@ -11,3 +11,16 @@ E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\Ba
 E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.pdb
 E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 E:\TakeMyTokens\Take My Tokens Private Coin Change\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.vbproj.CopyComplete
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.exe
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.deps.json
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.runtimeconfig.json
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.runtimeconfig.dev.json
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.dll
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\BasicClientExchange.pdb
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.vbprojAssemblyReference.cache
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.AssemblyInfoInputs.cache
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.AssemblyInfo.vb
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.vbproj.CopyComplete
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.dll
+E:\TakeMyTokens\Private Market\Client\BasicClientExchange\BasicClientExchange\BasicClientExchange\obj\Debug\netcoreapp3.0\BasicClientExchange.pdb

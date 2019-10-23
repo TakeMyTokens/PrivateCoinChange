@@ -1,0 +1,134 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PMBasicWindowsClients
+</name>
+</assembly>
+<members>
+<member name="T:PMBasicWindowsClients.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PMBasicWindowsClients.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PMBasicWindowsClients.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:PMBasicWindowsClients.AreaInternal.ProxyWS`1.getData">
+ <summary>
+ Questo metodo si occupa di effettuare il download dei dati 
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:PMBasicWindowsClients.AreaInternal.ProxyWS`1.sendData(System.String)">
+ <summary>
+ Questo metodo si occupa di inviare dei dati all' URL
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:PMBasicWindowsClients.AreaAdvertisement.item">
+ <summary>
+ This class contain the Item data
+ </summary>
+</member>
+<member name="T:PMBasicWindowsClients.AreaAdvertisement.baseAdvertisement">
+ <summary>
+ This class is a base of Advertisement
+ </summary>
+</member>
+<member name="T:PMBasicWindowsClients.AreaAdvertisement.newAdvertisement">
+ <summary>
+ This class contain the information reguard a New Advert data
+ </summary>
+</member>
+<member name="T:PMBasicWindowsClients.AreaAdvertisement.updateAdvertisement">
+ <summary>
+ This class contain the information reguard an Edit Advert data
+ </summary>
+</member>
+<member name="T:PMBasicWindowsClients.AreaAdvertisement.advertisement">
+ <summary>
+ This class contain the information reguard the advertisement
+ </summary>
+</member>
+<member name="T:PMBasicWindowsClients.AreaAdvertisement.advertisementEngine">
+ <summary>
+ This class contain all member to manage a single advertisement
+ </summary>
+</member>
+<member name="M:PMBasicWindowsClients.AreaAdvertisement.advertisementEngine.createIntoFilePath(System.String)">
+ <summary>
+ This method provide to create path into base directory
+ and set file name
+ </summary>
+ <param name="path"></param>
+ <returns></returns>
+</member>
+<member name="T:PMBasicWindowsClients.AreaAdvertisement.advertisements">
+ <summary>
+ This class contain all data and method to manage a list of advertisement
+ </summary>
+</member>
+<member name="M:PMBasicWindowsClients.AreaAdvertisement.advertisements.rebuidIndex">
+ <summary>
+ This method provide to rebuild a complete list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:PMBasicWindowsClients.AreaAdvertisement.advertisements.getActive">
+ <summary>
+ This methdo provide a get an active element of a list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:PMBasicWindowsClients.AreaAdvertisement.advertisements.save(System.Guid,System.Boolean)">
+ <summary>
+ This method provide to save an history of data and update the list
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:PMBasicWindowsClients.AreaAdvertisement.advertisements.add">
+ <summary>
+ This method provide to add a new record into list and mange the history
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:PMBasicWindowsClients.AreaAdvertisement.advertisements.deleteData(System.Guid)">
+ <summary>
+ This method provide to delete data into list and into key.
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:PMBasicWindowsClients.AreaAdvertisement.advertisements.containsKey(System.Guid)">
+ <summary>
+ This method provide to check into list the exact key
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:PMBasicWindowsClients.AreaAdvertisement.advertisements.getData(System.Guid)">
+ <summary>
+ This method provide to get an item of a list
+ </summary>
+ <param name="id"></param>
+ <returns></returns>
+</member>
+<member name="M:PMBasicWindowsClients.AreaAdvertisement.advertisements.init(System.String)">
+ <summary>
+ This method provide to execute an init code
+ </summary>
+ <param name="PathBaseDB"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>
