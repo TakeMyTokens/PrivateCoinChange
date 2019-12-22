@@ -9,11 +9,11 @@
 
         Public Function init() As Boolean
 
-            If IO.File.Exists("appConfig.PMBasic") Then
+            Dim serviceFile As New AreaBase.BaseFileDB(Of AreaModel.configuration)
 
-                Dim serviceFile As New AreaBase.BaseFileDB(Of AreaModel.configuration)
+            serviceFile.fileName = "appConfig.PMBasic"
 
-                serviceFile.fileName = "appConfig.PMBasic"
+            If IO.File.Exists(serviceFile.fileName) Then
 
                 If serviceFile.read() Then
 
@@ -24,6 +24,8 @@
                 Return True
 
             Else
+
+                serviceFile.save()
 
                 Return False
 
