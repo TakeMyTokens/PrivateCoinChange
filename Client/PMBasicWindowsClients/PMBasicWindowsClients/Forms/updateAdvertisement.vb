@@ -467,7 +467,8 @@ Public Class updateAdvertisement
 
         End If
 
-        Dim webSender As New AreaInternal.ProxyWS(Of AreaAdvertisement.updateAdvertisement)
+        'Dim webSender As New AreaInternal.ProxyWS(Of AreaAdvertisement.updateAdvertisement)
+        Dim webSender As New CHCCommonLibrary.CHCEngines.Communication.ProxyWS(Of AreaAdvertisement.updateAdvertisement)
 
         webSender.url = AreaCommon.configApplication.urlServer & "/api/v1/advertisements/" & value.id.ToString
 

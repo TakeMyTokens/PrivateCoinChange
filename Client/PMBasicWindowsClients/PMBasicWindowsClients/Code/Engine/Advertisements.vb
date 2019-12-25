@@ -113,7 +113,8 @@ Namespace AreaAdvertisement
     ''' </summary>
     Public Class advertisementEngine
 
-        Inherits AreaBase.BaseFileDB(Of advertisement)
+        'Inherits AreaBase.BaseFileDB(Of advertisement)
+        Inherits CHCCommonLibrary.CHCEngines.Common.BaseFileDB(Of advertisement)
 
 
 
@@ -158,7 +159,8 @@ Namespace AreaAdvertisement
     ''' </summary>
     Public Class advertisements
 
-        Inherits AreaBase.BaseFileDB(Of List(Of advertisement))
+        'Inherits AreaBase.BaseFileDB(Of List(Of advertisement))
+        Inherits CHCCommonLibrary.CHCEngines.Common.BaseFileDB(Of List(Of advertisement))
 
         Private _KeyAdverts As New Dictionary(Of Guid, advertisement)
 

@@ -6,7 +6,7 @@ Option Explicit On
 
 Namespace AreaModel
 
-    Public Class configuration
+    Public Class Configuration
 
         Public Enum enumConfigurationMode
             onlyRead
@@ -15,7 +15,7 @@ Namespace AreaModel
 
 
         Public mode As enumConfigurationMode = enumConfigurationMode.onlyRead
-        Public urlServer As String = "https://test-ws-private-market.takemytokens.com"
+        Public urlServer As String = "https://ws-private-market.takemytokens.com"
 
     End Class
 

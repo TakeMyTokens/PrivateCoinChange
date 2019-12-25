@@ -427,7 +427,8 @@ Public Class addAdvertisement
         advertisementData.visible = checkVisible.Checked
         advertisementData.walletID = valueWalletId.Text
 
-        Dim webSender As New AreaInternal.ProxyWS(Of AreaAdvertisement.newAdvertisement)
+        'Dim webSender As New AreaInternal.ProxyWS(Of AreaAdvertisement.newAdvertisement)
+        Dim webSender As New CHCCommonLibrary.CHCEngines.Communication.ProxyWS(Of AreaAdvertisement.newAdvertisement)
 
         webSender.url = AreaCommon.configApplication.urlServer & "/api/v1/advertisements"
 

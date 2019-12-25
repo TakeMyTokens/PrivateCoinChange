@@ -1,7 +1,6 @@
 ﻿Option Compare Text
 Option Explicit On
-
-
+Imports CHCCommonLibrary.CHCEngines.Common
 
 Public Class Advertisements
 
@@ -120,7 +119,8 @@ Public Class Advertisements
 
         Try
 
-            Dim webReader As New AreaInternal.ProxyWS(Of List(Of AreaAdvertisement.advertisement))
+            'Dim webReader As New AreaInternal.ProxyWS(Of List(Of AreaAdvertisement.advertisement))
+            Dim webReader As New CHCCommonLibrary.CHCEngines.Communication.ProxyWS(Of List(Of AreaAdvertisement.advertisement))
 
             webReader.url = AreaCommon.configApplication.urlServer & "/api/v1/advertisements/?active=true"
 
@@ -149,6 +149,15 @@ Public Class Advertisements
             Text = Text & " rel. " & My.Application.Info.Version.ToString
 
             initGrid()
+
+            If (AreaCommon.ModuleMain.configApplication.mode = AreaModel.Configuration.enumConfigurationMode.onlyRead) Then
+
+                filterAction.Visible = False
+                addAction.Visible = False
+                buttonModify.Visible = False
+                buttonRemove.Visible = False
+
+            End If
 
         Catch ex As Exception
 
@@ -198,7 +207,8 @@ Public Class Advertisements
 
         If Not IsNothing(gridMain.CurrentRow) Then
 
-            Dim webSender As New AreaInternal.ProxyWS(Of AreaAdvertisement.advertisement)
+            'Dim webSender As New AreaInternal.ProxyWS(Of AreaAdvertisement.advertisement)
+            Dim webSender As New CHCCommonLibrary.CHCEngines.Communication.ProxyWS(Of AreaAdvertisement.advertisement)
 
             webSender.url = AreaCommon.configApplication.urlServer & "/api/v1/advertisements/" & _AdvList(gridMain.CurrentRow.Index).id.ToString
 

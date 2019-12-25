@@ -24,22 +24,26 @@ Namespace My.Resources
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
-    Friend Module Resources
+     Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
+    Friend Class AppResources
         
-        Private resourceMan As Global.System.Resources.ResourceManager
+        Private Shared resourceMan As Global.System.Resources.ResourceManager
         
-        Private resourceCulture As Global.System.Globalization.CultureInfo
+        Private Shared resourceCulture As Global.System.Globalization.CultureInfo
+        
+        <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")>  _
+        Friend Sub New()
+            MyBase.New
+        End Sub
         
         '''<summary>
         '''  Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
         '''</summary>
         <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Friend ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
+        Friend Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
-                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("PMBasicWindowsClients.Resources", GetType(Resources).Assembly)
+                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("PMBasicWindowsClients.AppResources", GetType(AppResources).Assembly)
                     resourceMan = temp
                 End If
                 Return resourceMan
@@ -51,7 +55,7 @@ Namespace My.Resources
         '''  ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
         '''</summary>
         <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Friend Property Culture() As Global.System.Globalization.CultureInfo
+        Friend Shared Property Culture() As Global.System.Globalization.CultureInfo
             Get
                 Return resourceCulture
             End Get
@@ -61,13 +65,23 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''  Cerca una risorsa localizzata di tipo System.Byte[].
         '''</summary>
-        Friend ReadOnly Property business_1730089_640() As System.Drawing.Bitmap
+        Friend Shared ReadOnly Property CHCCommonLibrary() As Byte()
             Get
-                Dim obj As Object = ResourceManager.GetObject("business-1730089_640", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
+                Dim obj As Object = ResourceManager.GetObject("CHCCommonLibrary", resourceCulture)
+                Return CType(obj,Byte())
             End Get
         End Property
-    End Module
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Byte[].
+        '''</summary>
+        Friend Shared ReadOnly Property Newtonsoft_Json() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Newtonsoft_Json", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+    End Class
 End Namespace

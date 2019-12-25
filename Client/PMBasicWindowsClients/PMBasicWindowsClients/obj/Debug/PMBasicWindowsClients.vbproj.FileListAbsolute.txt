@@ -1,16 +1,18 @@
-E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\bin\Debug\PMBasicWindowsClients.exe.config
-E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\bin\Debug\PMBasicWindowsClients.exe
-E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\bin\Debug\PMBasicWindowsClients.pdb
-E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\bin\Debug\PMBasicWindowsClients.xml
 E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.vbprojAssemblyReference.cache
 E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.Advertisements.resources
 E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.Resources.resources
 E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.vbproj.GenerateResource.cache
-E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.exe
-E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.xml
-E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.pdb
 E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\bin\Debug\Newtonsoft.Json.dll
-E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\bin\Debug\Newtonsoft.Json.xml
 E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.vbproj.CopyComplete
 E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.addAdvertisement.resources
 E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.updateAdvertisement.resources
+E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\bin\Debug\CHCCommonLibrary.dll
+E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.AppResources.resources
+E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.splashScreen.resources
+E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\bin\Debug\Private Market - Win App.exe.config
+E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\bin\Debug\Private Market - Win App.exe
+E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\bin\Debug\Private Market - Win App.pdb
+E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\bin\Debug\Private Market - Win App.xml
+E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\Private Market - Win App.exe
+E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\Private Market - Win App.xml
+E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\Private Market - Win App.pdb

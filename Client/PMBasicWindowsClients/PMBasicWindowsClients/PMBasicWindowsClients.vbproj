@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>PMBasicWindowsClients.My.MyApplication</StartupObject>
     <RootNamespace>PMBasicWindowsClients</RootNamespace>
-    <AssemblyName>PMBasicWindowsClients</AssemblyName>
+    <AssemblyName>Private Market - Win App</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>PMBasicWindowsClients.xml</DocumentationFile>
+    <DocumentationFile>Private Market - Win App.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>PMBasicWindowsClients.xml</DocumentationFile>
+    <DocumentationFile>Private Market - Win App.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -51,6 +51,9 @@
     <ApplicationIcon>Assets\Images\favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CHCCommonLibrary">
+      <HintPath>..\packages\CHCCommonLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -79,11 +82,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Code\Base\BaseFileDB.vb" />
-    <Compile Include="Code\Base\ProxyWS.vb" />
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Code\Common\ModuleMain.vb" />
     <Compile Include="Code\Engine\Advertisements.vb" />
-    <Compile Include="Code\Modules\Configuration.vb" />
+    <Compile Include="Code\Models\Configuration.vb" />
     <Compile Include="Forms\addAdvertisement.Designer.vb">
       <DependentUpon>addAdvertisement.vb</DependentUpon>
     </Compile>
@@ -95,6 +97,12 @@
     </Compile>
     <Compile Include="Forms\advertisements.Designer.vb">
       <DependentUpon>advertisements.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\splashScreen.Designer.vb">
+      <DependentUpon>splashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\splashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\updateAdvertisement.Designer.vb">
@@ -118,6 +126,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Resources\AppResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\addAdvertisement.resx">
@@ -125,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\advertisements.resx">
       <DependentUpon>advertisements.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\splashScreen.resx">
+      <DependentUpon>splashScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\updateAdvertisement.resx">
       <DependentUpon>updateAdvertisement.vb</DependentUpon>
@@ -134,6 +150,11 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +173,9 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Assets\Images\favicon.ico" />
+    <None Include="Resources\business-1730089_640.jpg" />
+    <None Include="Resources\Newtonsoft.Json.dll" />
+    <None Include="Resources\CHCCommonLibrary.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
