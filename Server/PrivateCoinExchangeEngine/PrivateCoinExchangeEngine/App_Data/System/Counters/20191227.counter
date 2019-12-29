@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCounterData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CounterData>
+    <counterName>AdvertisementsController.getValues</counterName>
+    <value>1</value>
+  </CounterData>
+</ArrayOfCounterData>

@@ -194,3 +194,7 @@ E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExcha
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\obj\Debug\APIPrivateMarket.dll
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\obj\Debug\APIPrivateMarket.xml
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\obj\Debug\APIPrivateMarket.pdb
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\CHCCommonLibrary.dll
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\CHCServerSupport.dll
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\CHCServerSupport.pdb
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\CHCServerSupport.xml

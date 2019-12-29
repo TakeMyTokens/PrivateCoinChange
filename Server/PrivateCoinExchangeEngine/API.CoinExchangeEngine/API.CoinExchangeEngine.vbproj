@@ -44,6 +44,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CHCCommonLibrary">
+      <HintPath>..\packages\CHCCommonLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -64,7 +67,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\BaseFileDB.vb" />
     <Compile Include="Engine\Advertisement.vb" />
     <Compile Include="Engine\Coins.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -101,6 +103,15 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CHCServerSupport\CHCServerSupport.vbproj">
+      <Project>{f87b02ed-de8e-4e2d-894f-8b67d80abe6b}</Project>
+      <Name>CHCServerSupport</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

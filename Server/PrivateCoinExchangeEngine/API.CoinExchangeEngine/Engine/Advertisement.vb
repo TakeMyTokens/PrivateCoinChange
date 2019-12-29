@@ -111,9 +111,26 @@ Namespace AreaAdvertisement
     ''' <summary>
     ''' This class contain all member to manage a single advertisement
     ''' </summary>
-    Public Class advertisementEngine
+    Public Class AdvertisementEngine
 
-        Inherits AreaBase.BaseFileDB(Of advertisement)
+        Inherits CHCCommonLibrary.CHCEngines.Common.BaseFileDB(Of advertisement)
+
+        Private _logEngine As CHCServerSupport.Support.LogEngine
+
+
+
+
+
+
+        Private Sub trackLog(ByVal position As String, ByVal content As String, Optional ByVal messageType As String = "info")
+
+            If Not IsNothing(_logEngine) Then
+
+                _logEngine.track(position, content, messageType)
+
+            End If
+
+        End Sub
 
 
 
@@ -127,19 +144,31 @@ Namespace AreaAdvertisement
 
             Try
 
-                path = IO.Path.Combine(path, Data.id.ToString())
+                trackLog("AdvertisementEngine.createIntoFilePath", "Begin")
+
+                path = IO.Path.Combine(path, data.id.ToString())
+
+                trackLog("AdvertisementEngine.createIntoFilePath", "Set path = " & path)
 
                 If Not IO.Directory.Exists(path) Then
 
+                    trackLog("AdvertisementEngine.createIntoFilePath", "file not exist")
+
                     IO.Directory.CreateDirectory(path)
+
+                    trackLog("AdvertisementEngine.createIntoFilePath", "Directory created")
 
                 End If
 
                 MyBase.fileName = IO.Path.Combine(path, "adv-" & data.dateUpdate.ToUniversalTime.ToFileTimeUtc & ".revision")
 
+                trackLog("AdvertisementEngine.createIntoFilePath", "Set fileName = " & MyBase.fileName)
+
                 Return True
 
             Catch ex As Exception
+
+                trackLog("AdvertisementEngine.createIntoFilePath", "Error:" & ex.Message, "Fatal")
 
                 Return False
 
@@ -156,11 +185,14 @@ Namespace AreaAdvertisement
     ''' <summary>
     ''' This class contain all data and method to manage a list of advertisement
     ''' </summary>
-    Public Class advertisements
+    Public Class Advertisements
 
-        Inherits AreaBase.BaseFileDB(Of List(Of Advertisement))
+        'Inherits AreaBase.BaseFileDB(Of List(Of advertisement))
+        Inherits CHCCommonLibrary.CHCEngines.Common.BaseFileDB(Of List(Of advertisement))
 
-        Private _KeyAdverts As New Dictionary(Of Guid, Advertisement)
+        Private _keyAdverts As New Dictionary(Of Guid, advertisement)
+
+        Private _logEngine As CHCServerSupport.Support.LogEngine
 
 
         Public pathBaseAdvertisement As String
@@ -169,26 +201,49 @@ Namespace AreaAdvertisement
 
 
 
+        Private Sub trackLog(ByVal position As String, ByVal content As String, Optional ByVal messageType As String = "info", Optional ByVal adapterLog As CHCServerSupport.Support.LogEngine = Nothing)
+
+            If Not IsNothing(adapterLog) Then
+
+                adapterLog.track(position, content, messageType)
+
+            ElseIf Not IsNothing(_logEngine) Then
+
+                _logEngine.track(position, content, messageType)
+
+            End If
+
+        End Sub
+
+
 
         ''' <summary>
         ''' This method provide to rebuild a complete list
         ''' </summary>
         ''' <returns></returns>
-        Private Function rebuidIndex() As Boolean
+        Private Function rebuildIndex() As Boolean
 
             Try
 
-                _KeyAdverts = New Dictionary(Of Guid, advertisement)
+                trackLog("Advertisements.rebuildIndex", "Begin")
 
-                For Each item In Data
+                _keyAdverts = New Dictionary(Of Guid, advertisement)
 
-                    _KeyAdverts.Add(item.id, item)
+                trackLog("Advertisements.rebuildIndex", "new Dictionary")
+
+                For Each item In data
+
+                    _keyAdverts.Add(item.id, item)
 
                 Next
+
+                trackLog("Advertisements.rebuildIndex", "For...each completed")
 
                 Return True
 
             Catch ex As Exception
+
+                trackLog("Advertisements.rebuidIndex", "Error:" & ex.Message, "Fatal")
 
                 Return False
 
@@ -202,13 +257,23 @@ Namespace AreaAdvertisement
         ''' This methdo provide a get an active element of a list
         ''' </summary>
         ''' <returns></returns>
-        Public Function getActive() As List(Of advertisement)
+        Public Function getActive(Optional ByVal useLogEngineAccess As Boolean = False, Optional adapterLog As CHCServerSupport.Support.LogEngine = Nothing) As List(Of advertisement)
+
+            If useLogEngineAccess Then
+
+                adapterLog = _logEngine.createAccess()
+
+            End If
+
+            trackLog("Advertisements.getActive", "Begin", , adapterLog)
 
             Dim result As New List(Of advertisement)
 
+            trackLog("Advertisements.getActive", "Set New List",, adapterLog)
+
             Try
 
-                For Each item In Data
+                For Each item In data
 
                     If (item.state = enumState.visible) And
                        (item.dateAdvertisementStart >= Now) And (item.dateAdvertisementEnd <= Now) Then
@@ -219,7 +284,11 @@ Namespace AreaAdvertisement
 
                 Next
 
+                trackLog("Advertisements.getActive", "For...each completed",, adapterLog)
+
             Catch ex As Exception
+
+                trackLog("Advertisements.getActive", "Error:" & ex.Message, "Fatal", adapterLog)
 
             End Try
 
@@ -234,36 +303,87 @@ Namespace AreaAdvertisement
         ''' </summary>
         ''' <param name="id"></param>
         ''' <returns></returns>
-        Public Overloads Function save(ByVal id As Guid, Optional ByVal saveList As Boolean = True) As Boolean
+        Public Overloads Function save(ByVal id As Guid, Optional ByVal saveList As Boolean = True, Optional ByVal useLogEngineAccess As Boolean = False, Optional adapterLog As CHCServerSupport.Support.LogEngine = Nothing) As Boolean
 
-            Dim advEngine As New advertisementEngine
+            If useLogEngineAccess Then
+
+                adapterLog = _logEngine.createAccess()
+
+            End If
+
+            trackLog("Advertisements.save", "Enter with id=" & id.ToString(),, adapterLog)
+
+            Dim advEngine As New AdvertisementEngine
+
+            trackLog("Advertisements.save", "new AdvertisementEngine",, adapterLog)
 
             Try
 
-                If _KeyAdverts.ContainsKey(id) Then
+                If _keyAdverts.ContainsKey(id) Then
 
-                    advEngine.data = _KeyAdverts.Item(id)
+                    trackLog("Advertisements.save", "ContainsKey",, adapterLog)
+
+                    advEngine.data = _keyAdverts.Item(id)
+
+                    trackLog("Advertisements.save", "Before set data",, adapterLog)
 
                     advEngine.data.dateUpdate = Now.ToUniversalTime()
 
+                    trackLog("Advertisements.save", "Before createIntoFilePath = " & pathBaseAdvertisement,, adapterLog)
+
                     advEngine.createIntoFilePath(pathBaseAdvertisement)
+
+                    trackLog("Advertisements.save", "Before advEngine.save",, adapterLog)
 
                     advEngine.save()
 
+                    trackLog("Advertisements.save", "After advEngine.save",, adapterLog)
+
                     If saveList Then
+
+                        trackLog("Advertisements.save", "Before MyBase.save",, adapterLog)
 
                         MyBase.save()
 
+                        trackLog("Advertisements.save", "After MyBase.save",, adapterLog)
+
                     End If
+
+                    trackLog("Advertisements.save", "Return true",, adapterLog)
 
                     Return True
 
                 End If
 
             Catch ex As Exception
+
+                trackLog("Advertisements.save", "Error:" & ex.Message, "Fatal", adapterLog)
+
             End Try
 
+            trackLog("Advertisements.save", "Return false",, adapterLog)
+
             Return False
+
+        End Function
+
+
+
+        ''' <summary>
+        ''' This method provide to save an history of data and update the list
+        ''' </summary>
+        ''' <returns></returns>
+        Public Overloads Function save(Optional ByVal useLogEngineAccess As Boolean = False, Optional adapterLog As CHCServerSupport.Support.LogEngine = Nothing) As Boolean
+
+            If useLogEngineAccess Then
+
+                adapterLog = _logEngine.createAccess()
+
+            End If
+
+            trackLog("Advertisements.save", "Begin")
+
+            Return MyBase.save()
 
         End Function
 
@@ -273,19 +393,37 @@ Namespace AreaAdvertisement
         ''' This method provide to add a new record into list and mange the history
         ''' </summary>
         ''' <returns></returns>
-        Public Function add() As advertisement
+        Public Function add(Optional ByVal createLogEngineAccess As Boolean = False, Optional adapterLog As CHCServerSupport.Support.LogEngine = Nothing) As advertisement
+
+            If createLogEngineAccess Then
+
+                adapterLog = _logEngine.createAccess()
+
+            End If
+
+            trackLog("Advertisements.add", "Begin", , adapterLog)
 
             Dim newElement As New advertisement
+
+            trackLog("Advertisements.add", "new advertisement", , adapterLog)
 
             Try
 
                 newElement.id = Guid.NewGuid
 
-                MyBase.Data.Add(newElement)
+                trackLog("Advertisements.add", "Set id = " & newElement.id.ToString(),, adapterLog)
 
-                _KeyAdverts.Add(newElement.id, newElement)
+                MyBase.data.Add(newElement)
+
+                trackLog("Advertisements.add", "Before add",, adapterLog)
+
+                _keyAdverts.Add(newElement.id, newElement)
+
+                trackLog("Advertisements.add", "After add",, adapterLog)
 
             Catch ex As Exception
+
+                trackLog("Advertisements.add", "Error:" & ex.Message, "Fatal", adapterLog)
 
             End Try
 
@@ -300,7 +438,15 @@ Namespace AreaAdvertisement
         ''' </summary>
         ''' <param name="id"></param>
         ''' <returns></returns>
-        Public Function deleteData(ByVal id As Guid) As Boolean
+        Public Function deleteData(ByVal id As Guid, Optional ByVal createLogEngineAccess As Boolean = False, Optional adapterLog As CHCServerSupport.Support.LogEngine = Nothing) As Boolean
+
+            If createLogEngineAccess Then
+
+                adapterLog = _logEngine.createAccess()
+
+            End If
+
+            trackLog("Advertisements.deleteData", "Begin",, adapterLog)
 
             Try
 
@@ -308,8 +454,12 @@ Namespace AreaAdvertisement
 
                     If (item.id.CompareTo(id) = 0) Then
 
+                        trackLog("Advertisements.deleteData", "Data found",, adapterLog)
+
                         data.Remove(item)
-                        _KeyAdverts.Remove(id)
+                        _keyAdverts.Remove(id)
+
+                        trackLog("Advertisements.deleteData", "Data removed",, adapterLog)
 
                         Return True
 
@@ -317,7 +467,11 @@ Namespace AreaAdvertisement
 
                 Next
 
+                trackLog("Advertisements.deleteData", "For...each completed",, adapterLog)
+
             Catch ex As Exception
+
+                trackLog("Advertisements.deleteData", "Error:" & ex.Message, "Fatal", adapterLog)
 
             End Try
 
@@ -334,11 +488,15 @@ Namespace AreaAdvertisement
         ''' <returns></returns>
         Public Function containsKey(ByVal id As Guid) As Boolean
 
+            trackLog("Advertisements.containsKey", "Begin")
+
             Try
 
                 Return _KeyAdverts.ContainsKey(id)
 
             Catch ex As Exception
+
+                trackLog("Advertisements.containsKey", "Error:" & ex.Message, "Fatal")
 
             End Try
 
@@ -353,17 +511,29 @@ Namespace AreaAdvertisement
         ''' </summary>
         ''' <param name="id"></param>
         ''' <returns></returns>
-        Public Function getData(ByVal id As Guid) As advertisement
+        Public Function getData(ByVal id As Guid, Optional ByVal useLogEngineAccess As Boolean = False, Optional adapterLog As CHCServerSupport.Support.LogEngine = Nothing) As advertisement
+
+            If useLogEngineAccess Then
+
+                adapterLog = _logEngine.createAccess()
+
+            End If
+
+            trackLog("Advertisements.getData", "Begin",, adapterLog)
 
             Try
 
-                If _KeyAdverts.ContainsKey(id) Then
+                If _keyAdverts.ContainsKey(id) Then
 
-                    Return _KeyAdverts.Item(id)
+                    trackLog("Advertisements.getData", "ContainsKey",, adapterLog)
+
+                    Return _keyAdverts.Item(id)
 
                 End If
 
             Catch ex As Exception
+
+                trackLog("Advertisements.getData", "Error:" & ex.Message, "Fatal", adapterLog)
 
             End Try
 
@@ -378,31 +548,49 @@ Namespace AreaAdvertisement
         ''' </summary>
         ''' <param name="PathBaseDB"></param>
         ''' <returns></returns>
-        Public Function init(ByVal PathBaseDB As String) As Boolean
+        Public Function init(ByVal PathBaseDB As String, Optional ByVal logAdapter As CHCServerSupport.Support.LogEngine = Nothing) As Boolean
 
             Try
 
-                Dim strAdvertsing As String = IO.Path.Combine(PathBaseDB, "Advertisements")
+                _logEngine = logAdapter
 
-                If Not IO.Directory.Exists(strAdvertsing) Then
+                trackLog("Advertisements.init", "Begin")
 
-                    IO.Directory.CreateDirectory(strAdvertsing)
+                Dim advertsing As String = IO.Path.Combine(PathBaseDB, "Advertisements")
 
-                    pathBaseAdvertisement = strAdvertsing
+                trackLog("Advertisements.init", "advertsing = " & advertsing)
+
+                If Not IO.Directory.Exists(advertsing) Then
+
+                    trackLog("Advertisements.init", "Exist")
+
+                    IO.Directory.CreateDirectory(advertsing)
+
+                    trackLog("Advertisements.init", "CreateDirectory OK")
+
+                    pathBaseAdvertisement = advertsing
 
                 End If
 
-                MyBase.fileName = IO.Path.Combine(strAdvertsing, "CurrentList.adverts")
+                MyBase.fileName = IO.Path.Combine(advertsing, "CurrentList.adverts")
+
+                trackLog("Advertisements.init", "Set fileName = " & MyBase.fileName)
 
                 If MyBase.read() Then
 
-                    rebuidIndex()
+                    trackLog("Advertisements.init", "read completed")
+
+                    rebuildIndex()
+
+                    trackLog("Advertisements.init", "rebuildIndex completed")
 
                     Return True
 
                 End If
 
             Catch ex As Exception
+
+                trackLog("Advertisements.init", "Error:" & ex.Message, "Fatal")
 
             End Try
 

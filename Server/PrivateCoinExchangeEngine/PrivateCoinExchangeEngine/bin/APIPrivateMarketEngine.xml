@@ -47,12 +47,12 @@ APIPrivateMarketEngine
  This class contain the information reguard the advertisement
  </summary>
 </member>
-<member name="T:APIPrivateMarketEngine.AreaAdvertisement.advertisementEngine">
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.AdvertisementEngine">
  <summary>
  This class contain all member to manage a single advertisement
  </summary>
 </member>
-<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisementEngine.createIntoFilePath(System.String)">
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.AdvertisementEngine.createIntoFilePath(System.String)">
  <summary>
  This method provide to create path into base directory
  and set file name
@@ -60,58 +60,64 @@ APIPrivateMarketEngine
  <param name="path"></param>
  <returns></returns>
 </member>
-<member name="T:APIPrivateMarketEngine.AreaAdvertisement.advertisements">
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.Advertisements">
  <summary>
  This class contain all data and method to manage a list of advertisement
  </summary>
 </member>
-<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.rebuidIndex">
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.Advertisements.rebuildIndex">
  <summary>
  This method provide to rebuild a complete list
  </summary>
  <returns></returns>
 </member>
-<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.getActive">
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.Advertisements.getActive(System.Boolean,CHCServerSupport.Support.LogEngine)">
  <summary>
  This methdo provide a get an active element of a list
  </summary>
  <returns></returns>
 </member>
-<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.save(System.Guid,System.Boolean)">
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.Advertisements.save(System.Guid,System.Boolean,System.Boolean,CHCServerSupport.Support.LogEngine)">
  <summary>
  This method provide to save an history of data and update the list
  </summary>
  <param name="id"></param>
  <returns></returns>
 </member>
-<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.add">
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.Advertisements.save(System.Boolean,CHCServerSupport.Support.LogEngine)">
+ <summary>
+ This method provide to save an history of data and update the list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.Advertisements.add(System.Boolean,CHCServerSupport.Support.LogEngine)">
  <summary>
  This method provide to add a new record into list and mange the history
  </summary>
  <returns></returns>
 </member>
-<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.deleteData(System.Guid)">
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.Advertisements.deleteData(System.Guid,System.Boolean,CHCServerSupport.Support.LogEngine)">
  <summary>
  This method provide to delete data into list and into key.
  </summary>
  <param name="id"></param>
  <returns></returns>
 </member>
-<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.containsKey(System.Guid)">
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.Advertisements.containsKey(System.Guid)">
  <summary>
  This method provide to check into list the exact key
  </summary>
  <param name="id"></param>
  <returns></returns>
 </member>
-<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.getData(System.Guid)">
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.Advertisements.getData(System.Guid,System.Boolean,CHCServerSupport.Support.LogEngine)">
  <summary>
  This method provide to get an item of a list
  </summary>
  <param name="id"></param>
  <returns></returns>
 </member>
-<member name="M:APIPrivateMarketEngine.AreaAdvertisement.advertisements.init(System.String)">
+<member name="M:APIPrivateMarketEngine.AreaAdvertisement.Advertisements.init(System.String,CHCServerSupport.Support.LogEngine)">
  <summary>
  This method provide to execute an init code
  </summary>

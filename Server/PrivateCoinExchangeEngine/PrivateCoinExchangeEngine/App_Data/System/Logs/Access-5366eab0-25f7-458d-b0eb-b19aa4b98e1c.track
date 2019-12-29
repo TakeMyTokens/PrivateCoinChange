@@ -1,0 +1,4 @@
+1577493281399,13|2019-12-27T23:34:41|info|CounterEngine.increase|Begin
+1577493281401,87|2019-12-27T23:34:41|info|CounterEngine.increase|Change data
+1577493281401,87|2019-12-27T23:34:41|info|CounterEngine.increase|Build new counter
+1577493281403,82|2019-12-27T23:34:41|info|CounterEngine.increase|Completed

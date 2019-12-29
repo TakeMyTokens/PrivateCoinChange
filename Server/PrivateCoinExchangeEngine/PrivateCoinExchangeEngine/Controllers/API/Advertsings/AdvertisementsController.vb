@@ -17,30 +17,55 @@ Public Class AdvertisementsController
     ''' <returns></returns>
     Public Function getValues(ByVal Active As Boolean) As IEnumerable(Of APIPrivateMarketEngine.AreaAdvertisement.Advertisement)
 
-        If Active Then
+        Dim adapterLog As CHCServerSupport.Support.LogEngine
 
-            Return AreaCommon.Adverts.Data.AsEnumerable
+        Try
 
-        Else
+            adapterLog = AreaCommon.log.createAccess()
 
-            Return AreaCommon.Adverts.GetActive()
+            adapterLog.noSave = Not AreaCommon.settings.logAccessActive
 
-        End If
+            AreaCommon.counter.increase("AdvertisementsController.getValues",, adapterLog)
+
+            If Active Then
+
+                Return AreaCommon.adverts.data.AsEnumerable
+
+            Else
+
+                Return AreaCommon.adverts.getActive(False, adapterLog)
+
+            End If
+
+        Catch ex As Exception
+
+            adapterLog.track("AdvertisementsController.getValues", "Error:" & ex.Message, "Fatal")
+
+        End Try
 
     End Function
 
     ' GET api/Advertsings/id
-    Public Function getValue(ByVal id As String) As APIPrivateMarketEngine.AreaAdvertisement.Advertisement
+    Public Function getValue(ByVal id As String) As APIPrivateMarketEngine.AreaAdvertisement.advertisement
 
         Dim idGUID As Guid
+        Dim adapterLog As CHCServerSupport.Support.LogEngine
 
         Try
 
+            adapterLog = AreaCommon.log.createAccess()
+
+            adapterLog.noSave = Not AreaCommon.settings.logAccessActive
+
+            AreaCommon.counter.increase("AdvertisementsController.getValue",, adapterLog)
+
             Guid.TryParse(id, idGUID)
 
-            Return AreaCommon.Adverts.GetData(idGUID)
+            Return AreaCommon.adverts.getData(idGUID, False, adapterLog)
 
-        Catch
+        Catch ex As Exception
+
+            adapterLog.track("AdvertisementsController.getValue", "Error:" & ex.Message, "Fatal")
 
         End Try
 
@@ -55,10 +80,17 @@ Public Class AdvertisementsController
 
         Dim newElement As APIPrivateMarketEngine.AreaAdvertisement.item
         Dim newAdv As APIPrivateMarketEngine.AreaAdvertisement.advertisement
+        Dim adapterLog As CHCServerSupport.Support.LogEngine
 
         Try
 
-            newAdv = AreaCommon.Adverts.add()
+            adapterLog = AreaCommon.log.createAccess()
+
+            adapterLog.noSave = Not AreaCommon.settings.logAccessActive
+
+            AreaCommon.counter.increase("AdvertisementsController.postValue",, adapterLog)
+
+            newAdv = AreaCommon.adverts.add(False, adapterLog)
 
             With newAdv
 
@@ -111,9 +143,11 @@ Public Class AdvertisementsController
 
             AreaCommon.adverts.pathBaseAdvertisement = IO.Path.Combine(AreaCommon.pathBaseDB, "Advertisements")
 
-            AreaCommon.adverts.save(newAdv.id)
+            AreaCommon.adverts.save(newAdv.id, , False, adapterLog)
 
         Catch ex As Exception
+
+            adapterLog.track("AdvertisementsController.postValue", "Error:" & ex.Message, "Fatal")
 
         End Try
 
@@ -125,14 +159,20 @@ Public Class AdvertisementsController
     Public Sub putValue(ByVal id As String, <FromBody()> ByVal value As APIPrivateMarketEngine.AreaAdvertisement.updateAdvertisement)
 
         Dim newElement As APIPrivateMarketEngine.AreaAdvertisement.item
-
+        Dim adapterLog As CHCServerSupport.Support.LogEngine
         Dim idGUID As Guid
 
         Try
 
+            adapterLog = AreaCommon.log.createAccess()
+
+            adapterLog.noSave = Not AreaCommon.settings.logAccessActive
+
+            AreaCommon.counter.increase("AdvertisementsController.putValue",, adapterLog)
+
             Guid.TryParse(id, idGUID)
 
-            With AreaCommon.Adverts.GetData(idGUID)
+            With AreaCommon.adverts.getData(idGUID, False, adapterLog)
 
                 .dateAdvertisementStart = value.dateAdvertisementStart
                 .dateAdvertisementEnd = value.dateAdvertisementEnd
@@ -176,9 +216,11 @@ Public Class AdvertisementsController
             End With
 
             AreaCommon.adverts.pathBaseAdvertisement = IO.Path.Combine(AreaCommon.pathBaseDB, "Advertisements")
-            AreaCommon.adverts.save(idGUID)
+            AreaCommon.adverts.save(idGUID,, False, adapterLog)
 
         Catch ex As Exception
+
+            adapterLog.track("AdvertisementsController.putValue", "Error:" & ex.Message, "Fatal")
 
         End Try
 
@@ -190,8 +232,15 @@ Public Class AdvertisementsController
     Public Sub deleteValue(ByVal id As String)
 
         Dim idGUID As Guid
+        Dim adapterLog As CHCServerSupport.Support.LogEngine
 
         Try
+
+            adapterLog = AreaCommon.log.createAccess()
+
+            adapterLog.noSave = Not AreaCommon.settings.logAccessActive
+
+            AreaCommon.counter.increase("AdvertisementsController.deleteValue",, adapterLog)
 
             Guid.TryParse(id, idGUID)
 
@@ -201,15 +250,17 @@ Public Class AdvertisementsController
 
                 .pathBaseAdvertisement = IO.Path.Combine(AreaCommon.pathBaseDB, "Advertisements")
 
-                .save(idGUID, False)
+                .save(idGUID, False, False, adapterLog)
 
-                .deleteData(idGUID)
+                .deleteData(idGUID, False, adapterLog)
 
-                .save()
+                .save(False, adapterLog)
 
             End With
 
-        Catch
+        Catch ex As Exception
+
+            adapterLog.track("AdvertisementsController.deleteValue", "Error:" & ex.Message, "Fatal")
 
         End Try
 

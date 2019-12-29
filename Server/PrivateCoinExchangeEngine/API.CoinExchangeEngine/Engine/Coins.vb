@@ -4,24 +4,58 @@ Option Explicit On
 
 Public Class Coins
 
-    Inherits AreaBase.BaseFileDB(Of List(Of Coin))
+    'Inherits AreaBase.BaseFileDB(Of List(Of Coin))
+    Inherits CHCCommonLibrary.CHCEngines.Common.BaseFileDB(Of List(Of Coin))
 
 
-    Private _KeyCoin As New Dictionary(Of String, Coin)
+    Private _keyCoin As New Dictionary(Of String, Coin)
+
+    Private _logEngine As CHCServerSupport.Support.LogEngine
+
+
+
+    Public Class Coin
+
+        Public identity As Integer = 0
+        Public shortName As String = ""
+        Public description As String = ""
+
+        Public isFiat As Boolean = False
+
+        Public symbol As String = ""
+
+    End Class
 
 
 
 
+    Private Sub trackLog(ByVal position As String, ByVal content As String, Optional ByVal messageType As String = "info")
 
-    Private Function RebuildIndex() As Boolean
+        If Not IsNothing(_logEngine) Then
 
-        _KeyCoin = New Dictionary(Of String, Coin)
+            _logEngine.track(position, content, messageType)
 
-        For Each Coin In Data
+        End If
 
-            _KeyCoin.Add(Coin.ShortName, Coin)
+    End Sub
+
+
+
+    Private Function rebuildIndex() As Boolean
+
+        trackLog("Coins.rebuildIndex", "Begin")
+
+        _keyCoin = New Dictionary(Of String, Coin)
+
+        trackLog("Coins.rebuildIndex", "New Dictionary")
+
+        For Each Coin In data
+
+            _keyCoin.Add(Coin.shortName, Coin)
 
         Next
+
+        trackLog("Coins.rebuildIndex", "For each ... completed")
 
         Return True
 
@@ -29,36 +63,32 @@ Public Class Coins
 
 
 
-    Public Class Coin
-
-        Public Identity As Integer = 0
-        Public ShortName As String = ""
-        Public Description As String = ""
-
-        Public IsFiat As Boolean = False
-
-        Public Symbol As String = ""
-
-    End Class
 
 
 
-
-    Public Function AddNewCoin(ByVal shortName As String, ByVal symbol As String, Optional ByVal fiatCurrency As Boolean = False) As Coin
+    Public Function addNewCoin(ByVal shortName As String, ByVal symbol As String, Optional ByVal fiatCurrency As Boolean = False) As Coin
 
         Dim newElement As New Coin
 
         Try
 
-            newElement.ShortName = shortName
-            newElement.Symbol = symbol
-            newElement.Identity = Data.Count + 1
-            newElement.IsFiat = fiatCurrency
+            trackLog("Coins.addNewCoin", "Enter with shortName = " & shortName)
 
-            Data.Add(newElement)
-            _KeyCoin.Add(shortName, newElement)
+            newElement.shortName = shortName
+            newElement.symbol = symbol
+            newElement.identity = data.Count + 1
+            newElement.isFiat = fiatCurrency
+
+            trackLog("Coins.addNewCoin", "complete set")
+
+            data.Add(newElement)
+            _keyCoin.Add(shortName, newElement)
+
+            trackLog("Coins.addNewCoin", "Element add")
 
         Catch ex As Exception
+
+            trackLog("Coins.addNewCoin", "Error:" & ex.Message, "Fatal")
 
         End Try
 
@@ -67,17 +97,24 @@ Public Class Coins
     End Function
 
 
-    Public Function GetCoin(ByVal shortName As String) As Coin
+
+    Public Function getCoin(ByVal shortName As String) As Coin
 
         Try
 
-            If _KeyCoin.ContainsKey(shortName) Then
+            trackLog("Coins.getCoin", "Begin")
 
-                Return _KeyCoin.Item(shortName)
+            If _keyCoin.ContainsKey(shortName) Then
+
+                trackLog("Coins.getCoin", "ContainsKey")
+
+                Return _keyCoin.Item(shortName)
 
             End If
 
         Catch ex As Exception
+
+            trackLog("Coins.getCoin", "Error:" & ex.Message, "Fatal")
 
         End Try
 
@@ -87,41 +124,68 @@ Public Class Coins
 
 
 
-    Public Function Init(ByVal PathBaseDB As String) As Boolean
+
+    Public Function init(ByVal PathBaseDB As String, Optional ByVal logAdapter As CHCServerSupport.Support.LogEngine = Nothing) As Boolean
 
         Try
 
-            Dim strPathCoin As String = IO.Path.Combine(PathBaseDB, "Coins")
+            Dim pathCoin As String
 
-            If Not IO.Directory.Exists(strPathCoin) Then
+            _logEngine = logAdapter
 
-                IO.Directory.CreateDirectory(strPathCoin)
+            trackLog("Coins.init", "Begin")
+
+            pathCoin = IO.Path.Combine(PathBaseDB, "Coins")
+
+            trackLog("Coins.init", "PathBaseDB = " & pathCoin)
+
+            If Not IO.Directory.Exists(pathCoin) Then
+
+                trackLog("Coins.init", "Path not exist")
+
+                IO.Directory.CreateDirectory(pathCoin)
+
+                trackLog("Coins.init", "Directory created")
+
+            End If
+
+            MyBase.fileName = IO.Path.Combine(pathCoin, "CurrentList.coins")
+
+            trackLog("Coins.init", "fileName = " & MyBase.fileName)
+
+            If Not MyBase.read() Then
+
+                trackLog("Coins.init", "Coin file not exist")
+
+                addNewCoin("EUR", "€", True).description = "Euro"
+                addNewCoin("USD", "$", True).description = "Dollar"
+                addNewCoin("BTC", "B").description = "Bitcoin"
+                addNewCoin("ETH", "E").description = "Ethereum"
+                addNewCoin("CHCS", "§").description = "Crypto Hide Coin"
+
+                trackLog("Coins.init", "Coin file not exist")
+
+                Return MyBase.save()
 
             End If
 
-            MyBase.FileName = IO.Path.Combine(strPathCoin, "CurrentList.coins")
-
-            If Not MyBase.Read() Then
-
-                AddNewCoin("EUR", "€", True).Description = "Euro"
-                AddNewCoin("USD", "$", True).Description = "Dollar"
-                AddNewCoin("BTC", "B").Description = "Bitcoin"
-                AddNewCoin("ETH", "E").Description = "Ethereum"
-                AddNewCoin("CHCS", "§").Description = "Crypto Hide Coin"
-
-                Return MyBase.Save()
-
-            End If
+            trackLog("Coins.init", "Return with true")
 
             Return True
 
         Catch ex As Exception
 
+            trackLog("Coins.init", "Error:" & ex.Message, "Fatal")
+
             Return False
 
         Finally
 
-            RebuildIndex()
+            trackLog("Coins.init", "Before rebuildIndex")
+
+            rebuildIndex()
+
+            trackLog("Coins.init", "After rebuildIndex")
 
         End Try
 

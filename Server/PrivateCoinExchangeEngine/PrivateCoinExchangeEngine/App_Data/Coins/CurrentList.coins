@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfCoin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Coin>
-    <Identity>1</Identity>
-    <ShortName>EUR</ShortName>
-    <Description>Euro</Description>
-    <IsFiat>true</IsFiat>
-    <Symbol>€</Symbol>
+    <identity>1</identity>
+    <shortName>EUR</shortName>
+    <description>Euro</description>
+    <isFiat>true</isFiat>
+    <symbol>€</symbol>
   </Coin>
   <Coin>
-    <Identity>2</Identity>
-    <ShortName>USD</ShortName>
-    <Description>Dollar</Description>
-    <IsFiat>true</IsFiat>
-    <Symbol>$</Symbol>
+    <identity>2</identity>
+    <shortName>USD</shortName>
+    <description>Dollar</description>
+    <isFiat>true</isFiat>
+    <symbol>$</symbol>
   </Coin>
   <Coin>
-    <Identity>3</Identity>
-    <ShortName>BTC</ShortName>
-    <Description>Bitcoin</Description>
-    <IsFiat>false</IsFiat>
-    <Symbol>B</Symbol>
+    <identity>3</identity>
+    <shortName>BTC</shortName>
+    <description>Bitcoin</description>
+    <isFiat>false</isFiat>
+    <symbol>B</symbol>
   </Coin>
   <Coin>
-    <Identity>4</Identity>
-    <ShortName>ETH</ShortName>
-    <Description>Ethereum</Description>
-    <IsFiat>false</IsFiat>
-    <Symbol>E</Symbol>
+    <identity>4</identity>
+    <shortName>ETH</shortName>
+    <description>Ethereum</description>
+    <isFiat>false</isFiat>
+    <symbol>E</symbol>
   </Coin>
   <Coin>
-    <Identity>5</Identity>
-    <ShortName>CHCS</ShortName>
-    <Description>Crypto Hide Coin</Description>
-    <IsFiat>false</IsFiat>
-    <Symbol>§</Symbol>
+    <identity>5</identity>
+    <shortName>CHCS</shortName>
+    <description>Crypto Hide Coin</description>
+    <isFiat>false</isFiat>
+    <symbol>§</symbol>
   </Coin>
 </ArrayOfCoin>

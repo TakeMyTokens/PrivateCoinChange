@@ -12,8 +12,14 @@ Public Class WebApiApplication
         RouteConfig.RegisterRoutes(RouteTable.Routes)
         BundleConfig.RegisterBundles(BundleTable.Bundles)
 
-        AreaCommon.PathBaseDB = HttpContext.Current.Server.MapPath("~/App_Data")
-        AreaCommon.Run()
+        AreaCommon.pathBaseDB = HttpContext.Current.Server.MapPath("~/App_Data")
+        AreaCommon.run()
+
+    End Sub
+
+    Protected Sub Application_End()
+
+        AreaCommon.complete()
 
     End Sub
 

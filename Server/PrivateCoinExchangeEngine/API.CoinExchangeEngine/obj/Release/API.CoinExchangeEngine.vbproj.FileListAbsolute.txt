@@ -7,3 +7,17 @@ E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEng
 E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Release\APIPrivateMarketEngine.dll
 E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Release\APIPrivateMarketEngine.xml
 E:\TakeMyTokens\Take My Tokens Private Coin Change\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Release\APIPrivateMarketEngine.pdb
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\bin\Release\APIPrivateMarketEngine.dll
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\bin\Release\APIPrivateMarketEngine.pdb
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\bin\Release\APIPrivateMarketEngine.xml
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\bin\Release\CHCCommonLibrary.dll
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\bin\Release\CHCServerSupport.dll
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\bin\Release\CHCServerSupport.pdb
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\bin\Release\CHCServerSupport.xml
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Release\API.CoinExchangeEngine.vbprojAssemblyReference.cache
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Release\APIPrivateMarketEngine.Resources.resources
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Release\API.CoinExchangeEngine.vbproj.GenerateResource.cache
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Release\API.CoinExchangeEngine.vbproj.CopyComplete
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Release\APIPrivateMarketEngine.dll
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Release\APIPrivateMarketEngine.xml
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\API.CoinExchangeEngine\obj\Release\APIPrivateMarketEngine.pdb
