@@ -25,13 +25,11 @@ Public Class AdvertisementsController
 
             adapterLog.noSave = Not AreaCommon.settings.logAccessActive
 
+            adapterLog.track("AdvertisementsController.getValues", "Begin")
+
             AreaCommon.counter.increase("AdvertisementsController.getValues",, adapterLog)
 
-            If Active Then
-
-                Return AreaCommon.adverts.data.AsEnumerable
-
-            Else
+            If Not Active Then
 
                 Return AreaCommon.adverts.getActive(False, adapterLog)
 
@@ -41,7 +39,13 @@ Public Class AdvertisementsController
 
             adapterLog.track("AdvertisementsController.getValues", "Error:" & ex.Message, "Fatal")
 
+        Finally
+
+            adapterLog.track("AdvertisementsController.getValues", "Complete")
+
         End Try
+
+        Return AreaCommon.adverts.data.AsEnumerable
 
     End Function
 
@@ -57,6 +61,8 @@ Public Class AdvertisementsController
 
             adapterLog.noSave = Not AreaCommon.settings.logAccessActive
 
+            adapterLog.track("AdvertisementsController.getValue", "Begin")
+
             AreaCommon.counter.increase("AdvertisementsController.getValue",, adapterLog)
 
             Guid.TryParse(id, idGUID)
@@ -66,6 +72,10 @@ Public Class AdvertisementsController
         Catch ex As Exception
 
             adapterLog.track("AdvertisementsController.getValue", "Error:" & ex.Message, "Fatal")
+
+        Finally
+
+            adapterLog.track("AdvertisementsController.getValue", "Complete")
 
         End Try
 
@@ -87,6 +97,8 @@ Public Class AdvertisementsController
             adapterLog = AreaCommon.log.createAccess()
 
             adapterLog.noSave = Not AreaCommon.settings.logAccessActive
+
+            adapterLog.track("AdvertisementsController.postValue", "Begin")
 
             AreaCommon.counter.increase("AdvertisementsController.postValue",, adapterLog)
 
@@ -167,6 +179,8 @@ Public Class AdvertisementsController
             adapterLog = AreaCommon.log.createAccess()
 
             adapterLog.noSave = Not AreaCommon.settings.logAccessActive
+
+            adapterLog.track("AdvertisementsController.putValue", "Begin")
 
             AreaCommon.counter.increase("AdvertisementsController.putValue",, adapterLog)
 

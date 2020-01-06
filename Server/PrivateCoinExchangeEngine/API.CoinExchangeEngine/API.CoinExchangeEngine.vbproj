@@ -47,6 +47,10 @@
     <Reference Include="CHCCommonLibrary">
       <HintPath>..\packages\CHCCommonLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="CHCServerSupport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CHCServerSupport.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -106,12 +110,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Base\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CHCServerSupport\CHCServerSupport.vbproj">
-      <Project>{f87b02ed-de8e-4e2d-894f-8b67d80abe6b}</Project>
-      <Name>CHCServerSupport</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
