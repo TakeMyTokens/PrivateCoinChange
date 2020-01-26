@@ -506,5 +506,11 @@ Generates an URI-friendly ID for the <see cref="T:System.Web.Http.Description.Ap
  <param name="Active"></param>
  <returns></returns>
 </member>
+<member name="M:APIPrivateMarket.AssetsController.getValues">
+ <summary>
+ This method provides to return a complete list of advertisement archive (with or not filters)
+ </summary>
+ <returns></returns>
+</member>
 </members>
 </doc>

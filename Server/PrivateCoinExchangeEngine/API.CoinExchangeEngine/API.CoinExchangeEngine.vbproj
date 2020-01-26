@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Engine\Advertisement.vb" />
+    <Compile Include="Engine\AdvertisementsProcessor.vb" />
     <Compile Include="Engine\Coins.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

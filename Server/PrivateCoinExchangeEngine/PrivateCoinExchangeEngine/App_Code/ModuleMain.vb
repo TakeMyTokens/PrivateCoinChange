@@ -1,6 +1,8 @@
 ﻿Option Compare Text
 Option Explicit On
 
+Imports System.Threading
+
 
 
 
@@ -24,8 +26,9 @@ Namespace AreaCommon
 
         Public pathBaseDB As String = ""
 
-        Public adverts As New APIPrivateMarketEngine.AreaAdvertisement.advertisements
-        Public coinArchive As New APIPrivateMarketEngine.Coins
+        Public adverts As New APIPrivateMarketEngine.AreaAdvertisement.Advertisements
+        Public coinArchive As New APIPrivateMarketEngine.AreaCoin.Coins
+        Public benchMark As New APIPrivateMarketEngine.AreaAdvertisement.AdvertisementsProcessor
         Public log As New CHCServerSupport.Support.LogEngine
         Public counter As New CHCServerSupport.Support.CounterEngine
         Public settings As New AppSettings
@@ -50,7 +53,7 @@ Namespace AreaCommon
 
                 ElseIf IO.File.Exists(IO.Path.Combine(pathBaseDB, "System", "Production.environment")) Then
 
-                    log.track("moduleMain.run", "Set system as a testNet")
+                    log.track("moduleMain.run", "Set system as a Production")
 
                     environmentPosition = enumEnvironmentPosition.production
 
@@ -70,7 +73,19 @@ Namespace AreaCommon
 
                     log.track("moduleMain.run", "before adverts.init")
 
-                    Return adverts.init(pathBaseDB, log)
+                    If adverts.init(pathBaseDB, log) Then
+
+                        log.track("moduleMain.run", "after adverts.init")
+
+                        Return refreshBenchMarkAsynch(log)
+
+                    Else
+
+                        log.track("moduleMain.run", "after failed adverts.init")
+
+                        Return False
+
+                    End If
 
                 End If
 
@@ -89,6 +104,55 @@ Namespace AreaCommon
             Return False
 
         End Function
+
+
+
+        Public Sub refreshBenchMark()
+
+            Try
+
+                Dim tmp As New APIPrivateMarketEngine.AreaAdvertisement.AdvertisementsProcessor
+
+                tmp.init(adverts.data)
+
+                benchMark = tmp
+
+            Catch ex As Exception
+
+                log.track("moduleMain.refreshBenchMark", "Error:" & ex.Message, "error")
+
+            End Try
+
+        End Sub
+
+
+
+        Public Function refreshBenchMarkAsynch(ByRef adapterLog As CHCServerSupport.Support.LogEngine) As Boolean
+
+            Try
+
+                adapterLog.track("moduleMain.refreshBenchMarkAsynch", "Begin")
+
+                Dim objAsynch As New Thread(AddressOf refreshBenchMark)
+
+                objAsynch.Start()
+
+                Return True
+
+            Catch ex As Exception
+
+                log.track("moduleMain.refreshBenchMarkAsynch", "Error:" & ex.Message, "error")
+
+                Return False
+
+            Finally
+
+                log.track("moduleMain.refreshBenchMarkAsynch", "Completed")
+
+            End Try
+
+        End Function
+
 
 
         Public Function complete() As Boolean

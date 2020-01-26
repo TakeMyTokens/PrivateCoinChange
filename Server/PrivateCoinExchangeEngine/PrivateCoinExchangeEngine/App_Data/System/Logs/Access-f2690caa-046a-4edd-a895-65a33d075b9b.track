@@ -1,0 +1,6 @@
+1579739263610,16|2020-01-22T23:27:43|info|AssetsController.getValues|Begin
+1579739263610,16|2020-01-22T23:27:43|info|CounterEngine.increase|Begin
+1579739263610,16|2020-01-22T23:27:43|info|CounterEngine.increase|Change data
+1579739263610,16|2020-01-22T23:27:43|info|CounterEngine.increase|Build new counter
+1579739263610,16|2020-01-22T23:27:43|info|CounterEngine.increase|Completed
+1579739263610,16|2020-01-22T23:27:43|info|AssetsController.getValues|Complete

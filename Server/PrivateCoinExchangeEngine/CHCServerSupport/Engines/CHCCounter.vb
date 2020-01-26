@@ -109,6 +109,10 @@ Namespace Support
 
                 End If
 
+                _LastDate = Now.ToUniversalTime().ToString("yyyyMMdd")
+
+                Return read()
+
             Catch ex As Exception
 
                 trackLog("CounterEngine.init", "Error:" & ex.Message, "Fatal", adapterLog)

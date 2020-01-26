@@ -173,7 +173,7 @@ Namespace Support
 
             Dim tmp As New LogEngine
 
-            tmp.init(_path, "Access-" & Guid.NewGuid().ToString() & ".track")
+            tmp.init(_path, "Access-" & Now.ToUniversalTime().ToString("yyyyMMdd") & "-" & Guid.NewGuid().ToString() & ".track")
 
             _called = True
 

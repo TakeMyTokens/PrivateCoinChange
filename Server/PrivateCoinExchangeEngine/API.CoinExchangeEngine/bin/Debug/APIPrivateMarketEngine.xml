@@ -22,27 +22,27 @@ APIPrivateMarketEngine
   ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
 </summary>
 </member>
-<member name="T:APIPrivateMarketEngine.AreaAdvertisement.item">
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.Item">
  <summary>
  This class contain the Item data
  </summary>
 </member>
-<member name="T:APIPrivateMarketEngine.AreaAdvertisement.baseAdvertisement">
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.BaseAdvertisement">
  <summary>
  This class is a base of Advertisement
  </summary>
 </member>
-<member name="T:APIPrivateMarketEngine.AreaAdvertisement.newAdvertisement">
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.NewAdvertisement">
  <summary>
  This class contain the information reguard a New Advert data
  </summary>
 </member>
-<member name="T:APIPrivateMarketEngine.AreaAdvertisement.updateAdvertisement">
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.UpdateAdvertisement">
  <summary>
  This class contain the information reguard an Edit Advert data
  </summary>
 </member>
-<member name="T:APIPrivateMarketEngine.AreaAdvertisement.advertisement">
+<member name="T:APIPrivateMarketEngine.AreaAdvertisement.Advertisement">
  <summary>
  This class contain the information reguard the advertisement
  </summary>

@@ -30,6 +30,7 @@ Partial Class Advertisements
         Me.addAction = New System.Windows.Forms.Button()
         Me.buttonModify = New System.Windows.Forms.Button()
         Me.buttonRemove = New System.Windows.Forms.Button()
+        Me.benchMarkButton = New System.Windows.Forms.Button()
         CType(Me.gridMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -45,16 +46,16 @@ Partial Class Advertisements
         Me.gridMain.Name = "gridMain"
         Me.gridMain.ReadOnly = True
         Me.gridMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gridMain.Size = New System.Drawing.Size(680, 451)
+        Me.gridMain.Size = New System.Drawing.Size(683, 451)
         Me.gridMain.TabIndex = 0
         '
         'refreshData
         '
         Me.refreshData.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.refreshData.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.refreshData.Location = New System.Drawing.Point(708, 12)
+        Me.refreshData.Location = New System.Drawing.Point(701, 12)
         Me.refreshData.Name = "refreshData"
-        Me.refreshData.Size = New System.Drawing.Size(75, 41)
+        Me.refreshData.Size = New System.Drawing.Size(90, 41)
         Me.refreshData.TabIndex = 1
         Me.refreshData.Text = "Refresh"
         Me.refreshData.UseVisualStyleBackColor = True
@@ -63,9 +64,9 @@ Partial Class Advertisements
         '
         Me.Cancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Cancel.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Cancel.Location = New System.Drawing.Point(708, 440)
+        Me.Cancel.Location = New System.Drawing.Point(701, 440)
         Me.Cancel.Name = "Cancel"
-        Me.Cancel.Size = New System.Drawing.Size(75, 23)
+        Me.Cancel.Size = New System.Drawing.Size(90, 23)
         Me.Cancel.TabIndex = 2
         Me.Cancel.Text = "Close"
         Me.Cancel.UseVisualStyleBackColor = True
@@ -73,9 +74,9 @@ Partial Class Advertisements
         'filterAction
         '
         Me.filterAction.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.filterAction.Location = New System.Drawing.Point(709, 59)
+        Me.filterAction.Location = New System.Drawing.Point(701, 87)
         Me.filterAction.Name = "filterAction"
-        Me.filterAction.Size = New System.Drawing.Size(75, 23)
+        Me.filterAction.Size = New System.Drawing.Size(90, 23)
         Me.filterAction.TabIndex = 3
         Me.filterAction.Text = "Filter"
         Me.filterAction.UseVisualStyleBackColor = True
@@ -83,9 +84,9 @@ Partial Class Advertisements
         'addAction
         '
         Me.addAction.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.addAction.Location = New System.Drawing.Point(708, 88)
+        Me.addAction.Location = New System.Drawing.Point(700, 116)
         Me.addAction.Name = "addAction"
-        Me.addAction.Size = New System.Drawing.Size(75, 23)
+        Me.addAction.Size = New System.Drawing.Size(90, 23)
         Me.addAction.TabIndex = 4
         Me.addAction.Text = "Insert"
         Me.addAction.UseVisualStyleBackColor = True
@@ -93,9 +94,9 @@ Partial Class Advertisements
         'buttonModify
         '
         Me.buttonModify.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.buttonModify.Location = New System.Drawing.Point(709, 117)
+        Me.buttonModify.Location = New System.Drawing.Point(701, 145)
         Me.buttonModify.Name = "buttonModify"
-        Me.buttonModify.Size = New System.Drawing.Size(75, 23)
+        Me.buttonModify.Size = New System.Drawing.Size(90, 23)
         Me.buttonModify.TabIndex = 5
         Me.buttonModify.Text = "Modify"
         Me.buttonModify.UseVisualStyleBackColor = True
@@ -103,18 +104,30 @@ Partial Class Advertisements
         'buttonRemove
         '
         Me.buttonRemove.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.buttonRemove.Location = New System.Drawing.Point(709, 146)
+        Me.buttonRemove.Location = New System.Drawing.Point(701, 174)
         Me.buttonRemove.Name = "buttonRemove"
-        Me.buttonRemove.Size = New System.Drawing.Size(75, 23)
+        Me.buttonRemove.Size = New System.Drawing.Size(90, 23)
         Me.buttonRemove.TabIndex = 6
         Me.buttonRemove.Text = "Remove"
         Me.buttonRemove.UseVisualStyleBackColor = True
+        '
+        'benchMarkButton
+        '
+        Me.benchMarkButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.benchMarkButton.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.benchMarkButton.Location = New System.Drawing.Point(701, 228)
+        Me.benchMarkButton.Name = "benchMarkButton"
+        Me.benchMarkButton.Size = New System.Drawing.Size(90, 23)
+        Me.benchMarkButton.TabIndex = 7
+        Me.benchMarkButton.Text = "Benchmark"
+        Me.benchMarkButton.UseVisualStyleBackColor = True
         '
         'Advertisements
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(796, 475)
+        Me.ClientSize = New System.Drawing.Size(804, 475)
+        Me.Controls.Add(Me.benchMarkButton)
         Me.Controls.Add(Me.buttonRemove)
         Me.Controls.Add(Me.buttonModify)
         Me.Controls.Add(Me.addAction)
@@ -139,4 +152,5 @@ Partial Class Advertisements
     Friend WithEvents addAction As Button
     Friend WithEvents buttonModify As Button
     Friend WithEvents buttonRemove As Button
+    Friend WithEvents benchMarkButton As Button
 End Class

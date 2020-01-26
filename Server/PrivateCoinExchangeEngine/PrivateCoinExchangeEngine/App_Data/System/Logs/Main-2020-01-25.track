@@ -1,0 +1,75 @@
+1579985224726,17|2020-01-25T19:47:04|info|moduleMain.run|Begin
+1579985230324,52|2020-01-25T19:47:10|info|moduleMain.run|Set system as a Production
+1579985232618,86|2020-01-25T19:47:12|info|moduleMain.run|before coinArchive.init
+1579987052021,16|2020-01-25T20:17:32|info|Coins.init|Begin
+1579987052025,19|2020-01-25T20:17:32|info|Coins.init|PathBaseDB = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Coins
+1579987052033,17|2020-01-25T20:17:32|info|Coins.init|fileName = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Coins\CurrentList.coins
+1579987052232,31|2020-01-25T20:17:32|info|Coins.init|Return with true
+1579987052239,19|2020-01-25T20:17:32|info|Coins.init|Before rebuildIndex
+1579987052245,15|2020-01-25T20:17:32|info|Coins.rebuildIndex|Begin
+1579987052246,13|2020-01-25T20:17:32|info|Coins.rebuildIndex|New Dictionary
+1579987052251,2|2020-01-25T20:17:32|info|Coins.rebuildIndex|For each ... completed
+1579987052254,15|2020-01-25T20:17:32|info|Coins.init|After rebuildIndex
+1579987052255,15|2020-01-25T20:17:32|info|moduleMain.run|before adverts.init
+1579987052256,42|2020-01-25T20:17:32|info|Advertisements.init|Begin
+1579987052260,48|2020-01-25T20:17:32|info|Advertisements.init|advertsing = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Advertisements
+1579987052262,36|2020-01-25T20:17:32|info|Advertisements.init|Set fileName = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Advertisements\CurrentList.adverts
+1579987052391,55|2020-01-25T20:17:32|info|Advertisements.init|read completed
+1579987052393,45|2020-01-25T20:17:32|info|Advertisements.rebuildIndex|Begin
+1579987052395,17|2020-01-25T20:17:32|info|Advertisements.rebuildIndex|new Dictionary
+1579987052400,28|2020-01-25T20:17:32|info|Advertisements.rebuildIndex|For...each completed
+1579987052402,19|2020-01-25T20:17:32|info|Advertisements.init|rebuildIndex completed
+1579987052403,22|2020-01-25T20:17:32|info|moduleMain.run|after adverts.init
+1579987052403,22|2020-01-25T20:17:32|info|moduleMain.refreshBenchMarkAsynch|Begin
+1579987052417,4|2020-01-25T20:17:32|info|moduleMain.refreshBenchMarkAsynch|Completed
+1579987052418,22|2020-01-25T20:17:32|info|moduleMain.run|Completed
+1579987218650,91|2020-01-25T20:20:18|info|moduleMain.run|Begin
+1579987218719,91|2020-01-25T20:20:18|info|moduleMain.run|Set system as a Production
+1579987218722,81|2020-01-25T20:20:18|info|moduleMain.run|before coinArchive.init
+1579987218724,94|2020-01-25T20:20:18|info|Coins.init|Begin
+1579987218725,72|2020-01-25T20:20:18|info|Coins.init|PathBaseDB = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Coins
+1579987218725,72|2020-01-25T20:20:18|info|Coins.init|fileName = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Coins\CurrentList.coins
+1579987218887,72|2020-01-25T20:20:18|info|Coins.init|Return with true
+1579987218888,81|2020-01-25T20:20:18|info|Coins.init|Before rebuildIndex
+1579987218890,78|2020-01-25T20:20:18|info|Coins.rebuildIndex|Begin
+1579987218891,8|2020-01-25T20:20:18|info|Coins.rebuildIndex|New Dictionary
+1579987218892,77|2020-01-25T20:20:18|info|Coins.rebuildIndex|For each ... completed
+1579987218893,76|2020-01-25T20:20:18|info|Coins.init|After rebuildIndex
+1579987218896,72|2020-01-25T20:20:18|info|moduleMain.run|before adverts.init
+1579987218898,93|2020-01-25T20:20:18|info|Advertisements.init|Begin
+1579987218899,76|2020-01-25T20:20:18|info|Advertisements.init|advertsing = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Advertisements
+1579987218900,81|2020-01-25T20:20:18|info|Advertisements.init|Set fileName = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Advertisements\CurrentList.adverts
+1579987218987,03|2020-01-25T20:20:18|info|Advertisements.init|read completed
+1579987218999,89|2020-01-25T20:20:18|info|Advertisements.rebuildIndex|Begin
+1579987219004,92|2020-01-25T20:20:19|info|Advertisements.rebuildIndex|new Dictionary
+1579987219007,84|2020-01-25T20:20:19|info|Advertisements.rebuildIndex|For...each completed
+1579987219008,86|2020-01-25T20:20:19|info|Advertisements.init|rebuildIndex completed
+1579987219009,96|2020-01-25T20:20:19|info|moduleMain.run|after adverts.init
+1579987219011,98|2020-01-25T20:20:19|info|moduleMain.refreshBenchMarkAsynch|Begin
+1579987219019,74|2020-01-25T20:20:19|info|moduleMain.refreshBenchMarkAsynch|Completed
+1579987219033,87|2020-01-25T20:20:19|info|moduleMain.run|Completed
+1579987298071,65|2020-01-25T20:21:38|info|moduleMain.run|Begin
+1579987298136,27|2020-01-25T20:21:38|info|moduleMain.run|Set system as a Production
+1579987298139,28|2020-01-25T20:21:38|info|moduleMain.run|before coinArchive.init
+1579987342251,22|2020-01-25T20:22:22|info|Coins.init|Begin
+1579987342251,94|2020-01-25T20:22:22|info|Coins.init|PathBaseDB = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Coins
+1579987342253,92|2020-01-25T20:22:22|info|Coins.init|fileName = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Coins\CurrentList.coins
+1579987342332,89|2020-01-25T20:22:22|info|Coins.init|Return with true
+1579987342333,93|2020-01-25T20:22:22|info|Coins.init|Before rebuildIndex
+1579987342339,11|2020-01-25T20:22:22|info|Coins.rebuildIndex|Begin
+1579987342348,87|2020-01-25T20:22:22|info|Coins.rebuildIndex|New Dictionary
+1579987342362,88|2020-01-25T20:22:22|info|Coins.rebuildIndex|For each ... completed
+1579987342367,03|2020-01-25T20:22:22|info|Coins.init|After rebuildIndex
+1579987342369,84|2020-01-25T20:22:22|info|moduleMain.run|before adverts.init
+1579987342378,95|2020-01-25T20:22:22|info|Advertisements.init|Begin
+1579987342381,83|2020-01-25T20:22:22|info|Advertisements.init|advertsing = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Advertisements
+1579987342384,82|2020-01-25T20:22:22|info|Advertisements.init|Set fileName = E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\App_Data\Advertisements\CurrentList.adverts
+1579987342500,88|2020-01-25T20:22:22|info|Advertisements.init|read completed
+1579987342501,89|2020-01-25T20:22:22|info|Advertisements.rebuildIndex|Begin
+1579987342503,95|2020-01-25T20:22:22|info|Advertisements.rebuildIndex|new Dictionary
+1579987342505,07|2020-01-25T20:22:22|info|Advertisements.rebuildIndex|For...each completed
+1579987342506,15|2020-01-25T20:22:22|info|Advertisements.init|rebuildIndex completed
+1579987342513,6|2020-01-25T20:22:22|info|moduleMain.run|after adverts.init
+1579987342515,88|2020-01-25T20:22:22|info|moduleMain.refreshBenchMarkAsynch|Begin
+1579987342523,84|2020-01-25T20:22:22|info|moduleMain.refreshBenchMarkAsynch|Completed
+1579987342531,87|2020-01-25T20:22:22|info|moduleMain.run|Completed

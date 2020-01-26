@@ -68,11 +68,23 @@ Public Class Advertisements
 
                 row.Add(item.dateAdvertisementEnd.ToString("dd/MM/yyyy"))
                 row.Add(item.walletID)
-                row.Add(item.offeredItems(0).description)
-                row.Add(Format(item.offeredItems(0).amount, "#,##0.00"))
+
+                If (item.offeredItems.Count > 0) Then
+                    row.Add(item.offeredItems(0).description)
+                    row.Add(Format(item.offeredItems(0).amount, "#,##0.00"))
+                Else
+                    row.Add("")
+                    row.Add("")
+                End If
+
                 row.Add("")
-                row.Add(item.requestedItems(0).description)
-                row.Add(Format(item.requestedItems(0).amount, "#,##0.00"))
+                If (item.requestedItems.Count > 0) Then
+                    row.Add(item.requestedItems(0).description)
+                    row.Add(Format(item.requestedItems(0).amount, "#,##0.00"))
+                Else
+                    row.Add("")
+                    row.Add("")
+                End If
                 row.Add(item.exchangeArea)
                 row.Add(item.id)
                 row.Add(item.currentNumberQueue)
@@ -119,7 +131,6 @@ Public Class Advertisements
 
         Try
 
-            'Dim webReader As New AreaInternal.ProxyWS(Of List(Of AreaAdvertisement.advertisement))
             Dim webReader As New CHCCommonLibrary.CHCEngines.Communication.ProxyWS(Of List(Of AreaAdvertisement.advertisement))
 
             webReader.url = AreaCommon.configApplication.urlServer & "/api/v1/advertisements/?active=true"
@@ -223,6 +234,14 @@ Public Class Advertisements
             End If
 
         End If
+
+    End Sub
+
+
+
+    Private Sub benchMarkButton_Click(sender As Object, e As EventArgs) Handles benchMarkButton.Click
+
+        benchMarks.ShowDialog()
 
     End Sub
 

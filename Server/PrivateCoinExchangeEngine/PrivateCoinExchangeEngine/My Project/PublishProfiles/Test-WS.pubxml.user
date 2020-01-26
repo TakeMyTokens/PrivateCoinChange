@@ -11,73 +11,73 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
   </PropertyGroup>
   <ItemGroup>
     <File Include="Areas/HelpPage/HelpPage.css">
-      <publishTime>10/05/2019 16:34:55</publishTime>
+      <publishTime>05/10/2019 16:34:55</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/Api.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.vbhtml">
-      <publishTime>10/05/2019 16:34:54</publishTime>
+      <publishTime>05/10/2019 16:34:54</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/Index.vbhtml">
       <publishTime>10/17/2019 00:07:25</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/ResourceModel.vbhtml">
-      <publishTime>10/05/2019 16:34:53</publishTime>
+      <publishTime>05/10/2019 16:34:53</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Shared/_Layout.vbhtml">
-      <publishTime>10/05/2019 16:34:53</publishTime>
+      <publishTime>05/10/2019 16:34:53</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Web.config">
-      <publishTime>10/05/2019 16:34:53</publishTime>
+      <publishTime>05/10/2019 16:34:53</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/_ViewStart.vbhtml">
-      <publishTime>10/05/2019 16:34:37</publishTime>
+      <publishTime>05/10/2019 16:34:37</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>09/10/2013 16:29:20</publishTime>
+      <publishTime>10/09/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.pdb">
-      <publishTime>09/10/2013 16:29:20</publishTime>
+      <publishTime>10/09/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/API.CoinExchangeEngine.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -86,40 +86,40 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/APIPrivateMarket.dll">
-      <publishTime>12/29/2019 00:32:51</publishTime>
+      <publishTime>01/25/2020 23:10:25</publishTime>
     </File>
     <File Include="bin/APIPrivateMarket.pdb">
-      <publishTime>12/29/2019 00:32:51</publishTime>
+      <publishTime>01/25/2020 23:10:25</publishTime>
     </File>
     <File Include="bin/APIPrivateMarket.xml">
-      <publishTime>12/29/2019 00:32:51</publishTime>
+      <publishTime>01/25/2020 23:10:25</publishTime>
     </File>
     <File Include="bin/APIPrivateMarketEngine.dll">
-      <publishTime>12/29/2019 00:32:50</publishTime>
+      <publishTime>01/23/2020 20:07:58</publishTime>
     </File>
     <File Include="bin/APIPrivateMarketEngine.pdb">
-      <publishTime>12/29/2019 00:32:50</publishTime>
+      <publishTime>01/23/2020 20:07:58</publishTime>
     </File>
     <File Include="bin/App_Code.compiled">
-      <publishTime>12/29/2019 00:33:06</publishTime>
+      <publishTime>01/25/2020 23:10:38</publishTime>
     </File>
     <File Include="bin/App_Code.dll">
-      <publishTime>12/29/2019 00:33:06</publishTime>
+      <publishTime>01/25/2020 23:10:37</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>12/29/2019 00:33:07</publishTime>
+      <publishTime>01/25/2020 23:10:38</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>12/29/2019 00:33:07</publishTime>
+      <publishTime>01/25/2020 23:10:38</publishTime>
     </File>
     <File Include="bin/CHCCommonLibrary.dll">
       <publishTime>12/23/2019 21:52:11</publishTime>
     </File>
     <File Include="bin/CHCServerSupport.dll">
-      <publishTime>12/29/2019 00:32:49</publishTime>
+      <publishTime>01/25/2020 23:10:24</publishTime>
     </File>
     <File Include="bin/CHCServerSupport.pdb">
-      <publishTime>12/29/2019 00:32:49</publishTime>
+      <publishTime>01/25/2020 23:10:24</publishTime>
     </File>
     <File Include="bin/it/System.Net.Http.Formatting.resources.dll">
       <publishTime>11/28/2018 13:00:50</publishTime>
@@ -137,7 +137,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>11/28/2018 13:00:02</publishTime>
     </File>
     <File Include="bin/it/System.Web.Optimization.resources.dll">
-      <publishTime>02/11/2014 14:28:42</publishTime>
+      <publishTime>11/02/2014 14:28:42</publishTime>
     </File>
     <File Include="bin/it/System.Web.Razor.resources.dll">
       <publishTime>11/28/2018 13:00:26</publishTime>
@@ -323,7 +323,7 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>11/28/2018 11:59:46</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>02/11/2014 14:26:04</publishTime>
+      <publishTime>11/02/2014 14:26:04</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
       <publishTime>11/28/2018 12:00:12</publishTime>
@@ -341,97 +341,97 @@ modificando il file MSBuild. Per altre informazioni su questo argomento, vedere 
       <publishTime>01/23/2014 12:57:34</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css.map">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.min.css">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.min.css.map">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="Content/bootstrap.css.map">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css.map">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>10/05/2019 16:34:37</publishTime>
+      <publishTime>05/10/2019 16:34:37</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>10/05/2019 16:34:38</publishTime>
+      <publishTime>05/10/2019 16:34:38</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.svg">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.woff">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.woff2">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>12/29/2019 00:32:56</publishTime>
+      <publishTime>01/25/2020 23:10:28</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
-      <publishTime>10/05/2019 16:34:46</publishTime>
+      <publishTime>05/10/2019 16:34:46</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
-      <publishTime>10/05/2019 16:34:45</publishTime>
+      <publishTime>05/10/2019 16:34:45</publishTime>
     </File>
     <File Include="Scripts/jquery-3.3.1.js">
-      <publishTime>10/05/2019 16:34:48</publishTime>
+      <publishTime>05/10/2019 16:34:48</publishTime>
     </File>
     <File Include="Scripts/jquery-3.3.1.min.js">
-      <publishTime>10/05/2019 16:34:47</publishTime>
+      <publishTime>05/10/2019 16:34:47</publishTime>
     </File>
     <File Include="Scripts/jquery-3.3.1.min.map">
-      <publishTime>10/05/2019 16:34:47</publishTime>
+      <publishTime>05/10/2019 16:34:47</publishTime>
     </File>
     <File Include="Scripts/jquery-3.3.1.slim.js">
-      <publishTime>10/05/2019 16:34:47</publishTime>
+      <publishTime>05/10/2019 16:34:47</publishTime>
     </File>
     <File Include="Scripts/jquery-3.3.1.slim.min.js">
-      <publishTime>10/05/2019 16:34:47</publishTime>
+      <publishTime>05/10/2019 16:34:47</publishTime>
     </File>
     <File Include="Scripts/jquery-3.3.1.slim.min.map">
-      <publishTime>10/05/2019 16:34:47</publishTime>
+      <publishTime>05/10/2019 16:34:47</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.8.3.js">
-      <publishTime>10/05/2019 16:34:56</publishTime>
+      <publishTime>05/10/2019 16:34:56</publishTime>
     </File>
     <File Include="Views/Home/Index.vbhtml">
       <publishTime>10/24/2019 13:29:58</publishTime>
     </File>
     <File Include="Views/Shared/Error.vbhtml">
-      <publishTime>10/05/2019 16:34:38</publishTime>
+      <publishTime>05/10/2019 16:34:38</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.vbhtml">
       <publishTime>10/19/2019 16:02:54</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>10/05/2019 16:34:38</publishTime>
+      <publishTime>05/10/2019 16:34:38</publishTime>
     </File>
     <File Include="Views/_ViewStart.vbhtml">
-      <publishTime>10/05/2019 16:34:38</publishTime>
+      <publishTime>05/10/2019 16:34:38</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/29/2019 00:32:54</publishTime>
+      <publishTime>01/25/2020 23:10:27</publishTime>
     </File>
   </ItemGroup>
 </Project>

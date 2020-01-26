@@ -15,7 +15,7 @@ Public Class AdvertisementsController
     ''' </summary>
     ''' <param name="Active"></param>
     ''' <returns></returns>
-    Public Function getValues(ByVal Active As Boolean) As IEnumerable(Of APIPrivateMarketEngine.AreaAdvertisement.Advertisement)
+    Public Function getValues(ByVal Active As Boolean) As IEnumerable(Of APIPrivateMarketEngine.AreaAdvertisement.advertisement)
 
         Dim adapterLog As CHCServerSupport.Support.LogEngine
 
@@ -79,7 +79,7 @@ Public Class AdvertisementsController
 
         End Try
 
-        Return New APIPrivateMarketEngine.AreaAdvertisement.Advertisement
+        Return New APIPrivateMarketEngine.AreaAdvertisement.advertisement
 
     End Function
 
@@ -157,6 +157,8 @@ Public Class AdvertisementsController
 
             AreaCommon.adverts.save(newAdv.id, , False, adapterLog)
 
+            AreaCommon.refreshBenchMarkAsynch(adapterLog)
+
         Catch ex As Exception
 
             adapterLog.track("AdvertisementsController.postValue", "Error:" & ex.Message, "Fatal")
@@ -232,6 +234,8 @@ Public Class AdvertisementsController
             AreaCommon.adverts.pathBaseAdvertisement = IO.Path.Combine(AreaCommon.pathBaseDB, "Advertisements")
             AreaCommon.adverts.save(idGUID,, False, adapterLog)
 
+            AreaCommon.refreshBenchMarkAsynch(adapterLog)
+
         Catch ex As Exception
 
             adapterLog.track("AdvertisementsController.putValue", "Error:" & ex.Message, "Fatal")
@@ -271,6 +275,8 @@ Public Class AdvertisementsController
                 .save(False, adapterLog)
 
             End With
+
+            AreaCommon.refreshBenchMarkAsynch(adapterLog)
 
         Catch ex As Exception
 

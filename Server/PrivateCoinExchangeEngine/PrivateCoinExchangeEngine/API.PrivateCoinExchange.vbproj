@@ -52,10 +52,6 @@
     <Reference Include="CHCCommonLibrary">
       <HintPath>..\packages\CHCCommonLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="CHCServerSupport, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\CHCServerSupport.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -196,6 +192,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.vb" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.vb" />
     <Compile Include="Controllers\API\Advertsings\AdvertisementsController.vb" />
+    <Compile Include="Controllers\API\Benchmark\AssetsController.vb" />
+    <Compile Include="Controllers\API\Benchmark\BenchMarkAssetController.vb" />
+    <Compile Include="Controllers\API\Benchmark\BenchMarksController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -304,11 +303,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Properties\" />
+    <Folder Include="Views\Assets\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\API.CoinExchangeEngine\API.CoinExchangeEngine.vbproj">
       <Project>{a29f3341-9576-44eb-b687-c778702282aa}</Project>
       <Name>API.CoinExchangeEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CHCServerSupport\CHCServerSupport.vbproj">
+      <Project>{f87b02ed-de8e-4e2d-894f-8b67d80abe6b}</Project>
+      <Name>CHCServerSupport</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

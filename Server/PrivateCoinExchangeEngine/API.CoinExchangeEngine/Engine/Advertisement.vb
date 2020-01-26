@@ -18,7 +18,7 @@ Namespace AreaAdvertisement
     ''' <summary>
     ''' This class contain the Item data
     ''' </summary>
-    Public Class item
+    Public Class Item
 
         Public Enum enumType
 
@@ -38,7 +38,7 @@ Namespace AreaAdvertisement
     ''' <summary>
     ''' This class is a base of Advertisement
     ''' </summary>
-    Public Class baseAdvertisement
+    Public Class BaseAdvertisement
 
         Public id As Guid
 
@@ -61,9 +61,9 @@ Namespace AreaAdvertisement
     ''' <summary>
     ''' This class contain the information reguard a New Advert data
     ''' </summary>
-    Public Class newAdvertisement
+    Public Class NewAdvertisement
 
-        Inherits baseAdvertisement
+        Inherits BaseAdvertisement
 
         Public walletID As String = ""
         Public signature As String = ""
@@ -77,9 +77,9 @@ Namespace AreaAdvertisement
     ''' <summary>
     ''' This class contain the information reguard an Edit Advert data
     ''' </summary>
-    Public Class updateAdvertisement
+    Public Class UpdateAdvertisement
 
-        Inherits baseAdvertisement
+        Inherits BaseAdvertisement
 
         Public signature As String = ""
 
@@ -92,9 +92,9 @@ Namespace AreaAdvertisement
     ''' <summary>
     ''' This class contain the information reguard the advertisement
     ''' </summary>
-    Public Class advertisement
+    Public Class Advertisement
 
-        Inherits baseAdvertisement
+        Inherits BaseAdvertisement
 
         Public dateUpdate As DateTime = DateTime.MinValue
 

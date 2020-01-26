@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Advertisement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>79938437-e400-4c25-93c7-085c206ed71d</id>
+  <dateAdvertisementStart>2020-01-19T23:52:29.0378256+01:00</dateAdvertisementStart>
+  <dateAdvertisementEnd>2020-01-19T23:52:29.0215604+01:00</dateAdvertisementEnd>
+  <offeredItems>
+    <Item>
+      <amount>1.00</amount>
+      <type>currency</type>
+      <description>CHCS</description>
+    </Item>
+  </offeredItems>
+  <requestedItems>
+    <Item>
+      <amount>1.0</amount>
+      <type>currency</type>
+      <description>XRP</description>
+    </Item>
+  </requestedItems>
+  <acceptOtherItems>true</acceptOtherItems>
+  <negotiable>true</negotiable>
+  <onlyEntireAmount>true</onlyEntireAmount>
+  <exchangeArea>prova</exchangeArea>
+  <dateUpdate>2020-01-19T22:53:03.4460737Z</dateUpdate>
+  <walletID>0-1-18fd8736-528f-47c8-a02e-7fef0a6e2c30</walletID>
+  <state>visible</state>
+  <currentNumberQueue>0</currentNumberQueue>
+</Advertisement>

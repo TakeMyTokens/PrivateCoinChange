@@ -148,6 +148,8 @@ E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExcha
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\roslyn\VBCSCompiler.exe.config
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\Antlr3.Runtime.dll
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\APIPrivateMarketEngine.dll
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\CHCCommonLibrary.dll
+E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\CHCServerSupport.dll
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\Microsoft.Web.Infrastructure.dll
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\Newtonsoft.Json.dll
@@ -194,7 +196,5 @@ E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExcha
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\obj\Debug\APIPrivateMarket.dll
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\obj\Debug\APIPrivateMarket.xml
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\obj\Debug\APIPrivateMarket.pdb
-E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\CHCCommonLibrary.dll
-E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\CHCServerSupport.dll
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\CHCServerSupport.pdb
 E:\TakeMyTokens\Private Market\Server\PrivateCoinExchangeEngine\PrivateCoinExchangeEngine\bin\CHCServerSupport.xml

@@ -1,0 +1,5 @@
+1579739271328,93|2020-01-22T23:27:51|info|BenchMarkAsset.getValues|Begin
+1579739271328,93|2020-01-22T23:27:51|info|CounterEngine.increase|Begin
+1579739271328,93|2020-01-22T23:27:51|info|CounterEngine.increase|Build new counter
+1579739271328,93|2020-01-22T23:27:51|info|CounterEngine.increase|Completed
+1579739271344,54|2020-01-22T23:27:51|info|BenchMarkAsset.getValues|Complete

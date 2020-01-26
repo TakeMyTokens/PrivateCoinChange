@@ -101,17 +101,23 @@
     <Compile Include="Code\Common\ModuleMain.vb" />
     <Compile Include="Code\Engine\Advertisements.vb" />
     <Compile Include="Code\Models\Configuration.vb" />
-    <Compile Include="Forms\addAdvertisement.Designer.vb">
+    <Compile Include="Forms\advertisements\addAdvertisement.Designer.vb">
       <DependentUpon>addAdvertisement.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\addAdvertisement.vb">
+    <Compile Include="Forms\advertisements\addAdvertisement.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\advertisements.vb">
+    <Compile Include="Forms\advertisements\advertisements.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\advertisements.Designer.vb">
+    <Compile Include="Forms\advertisements\advertisements.Designer.vb">
       <DependentUpon>advertisements.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\benchMark\benchMarks.Designer.vb">
+      <DependentUpon>benchMarks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\benchMark\benchMarks.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\splashScreen.Designer.vb">
@@ -120,10 +126,10 @@
     <Compile Include="Forms\splashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\updateAdvertisement.Designer.vb">
+    <Compile Include="Forms\advertisements\updateAdvertisement.Designer.vb">
       <DependentUpon>updateAdvertisement.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\updateAdvertisement.vb">
+    <Compile Include="Forms\advertisements\updateAdvertisement.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -148,16 +154,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\addAdvertisement.resx">
+    <EmbeddedResource Include="Forms\advertisements\addAdvertisement.resx">
       <DependentUpon>addAdvertisement.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\advertisements.resx">
+    <EmbeddedResource Include="Forms\advertisements\advertisements.resx">
       <DependentUpon>advertisements.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\benchMark\benchMarks.resx">
+      <DependentUpon>benchMarks.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\splashScreen.resx">
       <DependentUpon>splashScreen.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\updateAdvertisement.resx">
+    <EmbeddedResource Include="Forms\advertisements\updateAdvertisement.resx">
       <DependentUpon>updateAdvertisement.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">

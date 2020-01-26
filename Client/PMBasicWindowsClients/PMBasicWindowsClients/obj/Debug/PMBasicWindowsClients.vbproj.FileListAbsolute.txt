@@ -16,3 +16,4 @@ E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClient
 E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\Private Market - Win App.exe
 E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\Private Market - Win App.xml
 E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\Private Market - Win App.pdb
+E:\TakeMyTokens\Private Market\Client\PMBasicWindowsClients\PMBasicWindowsClients\obj\Debug\PMBasicWindowsClients.benchMarks.resources
