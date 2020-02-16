@@ -168,7 +168,7 @@ Namespace AreaAdvertisement
 
             Catch ex As Exception
 
-                trackLog("AdvertisementEngine.createIntoFilePath", "Error:" & ex.Message, "Fatal")
+                trackLog("AdvertisementEngine.createIntoFilePath", "Error:" & ex.Message, "fatal")
 
                 Return False
 
@@ -242,7 +242,7 @@ Namespace AreaAdvertisement
 
             Catch ex As Exception
 
-                trackLog("Advertisements.rebuidIndex", "Error:" & ex.Message, "Fatal")
+                trackLog("Advertisements.rebuidIndex", "Error:" & ex.Message, "fatal")
 
                 Return False
 
@@ -287,7 +287,7 @@ Namespace AreaAdvertisement
 
             Catch ex As Exception
 
-                trackLog("Advertisements.getActive", "Error:" & ex.Message, "Fatal", adapterLog)
+                trackLog("Advertisements.getActive", "Error:" & ex.Message, "fatal", adapterLog)
 
             End Try
 
@@ -356,7 +356,7 @@ Namespace AreaAdvertisement
 
             Catch ex As Exception
 
-                trackLog("Advertisements.save", "Error:" & ex.Message, "Fatal", adapterLog)
+                trackLog("Advertisements.save", "Error:" & ex.Message, "fatal", adapterLog)
 
             End Try
 
@@ -422,7 +422,7 @@ Namespace AreaAdvertisement
 
             Catch ex As Exception
 
-                trackLog("Advertisements.add", "Error:" & ex.Message, "Fatal", adapterLog)
+                trackLog("Advertisements.add", "Error:" & ex.Message, "fatal", adapterLog)
 
             End Try
 
@@ -470,7 +470,7 @@ Namespace AreaAdvertisement
 
             Catch ex As Exception
 
-                trackLog("Advertisements.deleteData", "Error:" & ex.Message, "Fatal", adapterLog)
+                trackLog("Advertisements.deleteData", "Error:" & ex.Message, "fatal", adapterLog)
 
             End Try
 
@@ -495,7 +495,7 @@ Namespace AreaAdvertisement
 
             Catch ex As Exception
 
-                trackLog("Advertisements.containsKey", "Error:" & ex.Message, "Fatal")
+                trackLog("Advertisements.containsKey", "Error:" & ex.Message, "fatal")
 
             End Try
 
@@ -532,7 +532,7 @@ Namespace AreaAdvertisement
 
             Catch ex As Exception
 
-                trackLog("Advertisements.getData", "Error:" & ex.Message, "Fatal", adapterLog)
+                trackLog("Advertisements.getData", "Error:" & ex.Message, "fatal", adapterLog)
 
             End Try
 
@@ -589,7 +589,7 @@ Namespace AreaAdvertisement
 
             Catch ex As Exception
 
-                trackLog("Advertisements.init", "Error:" & ex.Message, "Fatal")
+                trackLog("Advertisements.init", "Error:" & ex.Message, "fatal")
 
             End Try
 

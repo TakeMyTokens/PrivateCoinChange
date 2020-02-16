@@ -67,8 +67,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Engines\CHCCounter.vb" />
-    <Compile Include="Engines\CHCLog.vb" />
+    <Compile Include="Engines\Counters\CHCCounter.vb" />
+    <Compile Include="Engines\Common\CHCModule.vb" />
+    <Compile Include="Engines\Logs\CHCLog.vb" />
+    <Compile Include="Engines\Logs\CHCLogRotate.vb" />
+    <Compile Include="Engines\Logs\CHCRegistry.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
